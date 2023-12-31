@@ -15,12 +15,19 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Garalama";
+  src: local("Garalama"), url("../assets/fonts/garalama.ttf");
+  font-weight: normal;
+}
+
 /* variable css */
 
 :root {
   /* FONT */
   --primary-font: Actay;
   --secondary-font: Bitsumis;
+  --garalama-font: Garalama;
 
   /* FONT WEIGHT */
   --font-normal: 400;
@@ -63,4 +70,3 @@ body {
   /* overflow: hidden; */
   background-color: var(--dark-color);
 }
-

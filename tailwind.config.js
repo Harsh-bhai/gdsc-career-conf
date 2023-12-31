@@ -16,6 +16,7 @@ module.exports = {
       fontFamily: {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
+        garalama: ["var(--garalama-font)"],
       },
       fontWeight: {
         normal: "var(--font-normal)",
@@ -34,7 +35,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('tailwind-scrollbar'),
-  ],
+  plugins: [require("tailwind-scrollbar")],
 };

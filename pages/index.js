@@ -1,4 +1,15 @@
+import TitleDescription from "@/components/titleDescription";
+
 export default function Home() {
+
+  const data=[
+    {
+      title: "Sample Title",
+      description: "This is a sample description. You can replace this with your own content."
+    }
+    
+  ]
+
   const faqData = [
     {
       question: "What is GDSC - BITD ?",
@@ -16,6 +27,9 @@ export default function Home() {
     },
     // Add more FAQ items as needed
   ];
+  
 
-  return <div className="text-white">Home | Add other Components here....</div>;
+  return <div className="text-white">Home | Add other Components here....
+  <TitleDescription title={data[0].title} description={data[0].description}/>
+  </div>;
 }

@@ -19,7 +19,7 @@ const Navbar = () => {
   };
   const ref = useRef();
   return (
-    <div className="md:sticky md:top-0 md:z-50 w-full">
+    <div className="md:sticky md:top-0 md:z-50 w-full bg-black">
       <div className="w-full navbar flex flex-col md:flex-row items-center text-white md:p-2 shadow-lg py-4 ">
         <div className=" top-0 left-0 absolute m-7 md:m-10 text-3xl font-thin md:hidden">
           {" "}
@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
         <div
           ref={ref}
-          className="navitems z-50 flex flex-col md:flex-row md:items-center md:bg-inherit bg-white border-gray-400 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-full md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
+          className="navitems justify-end md:mr-20  bg-black z-50 flex flex-col md:flex-row md:items-center md:bg-inherit border-gray-700 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-full md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
         >
           <span
             className="absolute top-8 left-8
@@ -42,7 +42,7 @@ const Navbar = () => {
           >
             <AiFillCloseCircle className="text-4xl font-extralight md:hidden" />
           </span>
-          <div className=" flex flex-col md:flex-row md:items-center md:space-x-8  mainitems my-24 md:my-4 space-y-6 md:space-y-0">
+          <div className=" flex flex-col md:flex-row md:items-center md:space-x-12  mainitems my-24 md:my-4 space-y-6 md:space-y-0">
             {/* <Link  href={"/about"}><div onClick={toggle} className='hover:text-green-500 text-white cursor-pointer'>About</div></Link> */}
             {/* <Link  href={"/services"}><div onClick={toggle} className='hover:text-green-500 text-white cursor-pointer'>Services</div></Link> */}
             <Link href={"#About"}>
@@ -84,6 +84,11 @@ const Navbar = () => {
               >
                 About
               </div>
+            </Link>
+            <Link href={"#extras"}>
+            <button className="inline-flex text-black font-secondary bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          Register
+        </button>
             </Link>
           </div>
         </div>

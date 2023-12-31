@@ -1,14 +1,14 @@
+import Faq from "@/components/faq";
 import TitleDescription from "@/components/titleDescription";
 
 export default function Home() {
-
-  const data=[
+  const data = [
     {
       title: "Sample Title",
-      description: "This is a sample description. You can replace this with your own content."
-    }
-    
-  ]
+      description:
+        "This is a sample description. You can replace this with your own content.",
+    },
+  ];
 
   const faqData = [
     {
@@ -27,9 +27,21 @@ export default function Home() {
     },
     // Add more FAQ items as needed
   ];
-  
 
-  return <div className="text-white">Home | Add other Components here....
-  <TitleDescription title={data[0].title} description={data[0].description}/>
-  </div>;
+  return (
+    <div className="text-white min-h-screen">
+      <TitleDescription
+        title={data[0].title}
+        description={data[0].description}
+      />
+      
+      <section id="faqs " className="my-10 flex flex-col justify-center space-y-6">
+        <h1 className="font-secondary text-4xl text-center my-4">Common Queries</h1>
+      {faqData.map((item, index) => (
+        <Faq key={index} question={item.question} answer={item.answer} />
+      ))}
+      </section>
+
+    </div>
+  );
 }

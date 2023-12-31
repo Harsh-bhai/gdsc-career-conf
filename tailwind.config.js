@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        md: { max: "1090px" },
-      },
+      // screens: {
+      //   md: { max: "1090px" },
+      // },
       fontFamily: {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
@@ -34,5 +34,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

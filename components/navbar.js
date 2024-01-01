@@ -42,7 +42,7 @@ const Navbar = () => {
           >
             <AiFillCloseCircle className="text-4xl font-extralight md:hidden" />
           </span>
-          <div className=" flex flex-col md:flex-row md:items-center md:space-x-12  mainitems my-24 md:my-4 space-y-6 md:space-y-0">
+          <div className=" flex flex-col md:flex-row md:items-center md:space-x-12  mainitems my-24 md:my-4 space-y-6 md:space-y-0 md:after:-mr-16">
             {/* <Link  href={"/about"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>About</div></Link> */}
             {/* <Link  href={"/services"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>Services</div></Link> */}
             {/* <Link href={"#About"}>

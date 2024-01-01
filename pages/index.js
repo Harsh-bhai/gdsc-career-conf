@@ -1,8 +1,9 @@
 import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
 import TitleDescription from "@/components/titleDescription";
-import About from "@/components/about";
 import Sponsor_Info from "@/components/Sponsor_Info";
+import About from "@/components/About";
+import SpeakerRegister from "@/components/SpeakerRegister";
 
 export default function Home() {
   const infoContainer = [
@@ -19,11 +20,12 @@ export default function Home() {
       <Hero />
       <About />
       <Sponsor_Info />
-      <TitleDescription
+      <SpeakerRegister/>
+      {/* <TitleDescription
         title={infoContainer[0].title}
         description={infoContainer[0].description}
         buttonLabel={infoContainer[0].buttonLabel}
-      />
+      /> */}
 
       <FaqContainer />
     </div>

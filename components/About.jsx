@@ -2,7 +2,7 @@ import ArrowList from "./sec2_arrow_comp";
 import Image from "next/image";
 const About = () => {
   return (
-    <section className="w-screen mt-60 flex flex-col justify-center items-center">
+    <section className="w-screen  flex flex-col justify-center items-center">
       <Image
         className="right-0 absolute"
         src="sec2_message.svg"

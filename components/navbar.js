@@ -43,12 +43,12 @@ const Navbar = () => {
             <AiFillCloseCircle className="text-4xl font-extralight md:hidden" />
           </span>
           <div className=" flex flex-col md:flex-row md:items-center md:space-x-12  mainitems my-24 md:my-4 space-y-6 md:space-y-0">
-            {/* <Link  href={"/about"}><div onClick={toggle} className='hover:text-green-500 text-white cursor-pointer'>About</div></Link> */}
-            {/* <Link  href={"/services"}><div onClick={toggle} className='hover:text-green-500 text-white cursor-pointer'>Services</div></Link> */}
+            {/* <Link  href={"/about"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>About</div></Link> */}
+            {/* <Link  href={"/services"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>Services</div></Link> */}
             <Link href={"#About"}>
               <div
                 onClick={toggle}
-                className="hover:text-green-500 text-white cursor-pointer"
+                className="hover:text-primary text-white cursor-pointer"
               >
                 GDSC-BITD
               </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
             <Link href={"#careerconf"}>
               <div
                 onClick={toggle}
-                className="hover:text-green-500 text-white cursor-pointer"
+                className="hover:text-primary text-white cursor-pointer"
               >
                 Career-Conf
               </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link href={"#PreviousEvents"}>
               <div
                 onClick={toggle}
-                className="hover:text-green-500 text-white cursor-pointer"
+                className="hover:text-primary text-white cursor-pointer"
               >
                 Our Work
               </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
             <Link href={"#team"}>
               <div
                 onClick={toggle}
-                className="hover:text-green-500 text-white cursor-pointer"
+                className="hover:text-primary text-white cursor-pointer"
               >
                 Team
               </div>
@@ -80,13 +80,13 @@ const Navbar = () => {
             <Link href={"#extras"}>
               <div
                 onClick={toggle}
-                className="hover:text-green-500 text-white cursor-pointer"
+                className="hover:text-primary text-white cursor-pointer"
               >
                 About
               </div>
             </Link>
             <Link href={"#extras"}>
-              <button className="inline-flex text-black font-secondary bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button className="inline-flex text-black font-secondary bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-white rounded text-lg">
                 Register
               </button>
             </Link>

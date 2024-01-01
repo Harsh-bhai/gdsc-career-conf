@@ -1,24 +1,25 @@
 import React from "react";
+import Badges from "./Badges";
 
 const Hero = () => {
   return (
     <div className="h-screen z-10 py-0">
       <div className="relative">
         {/* Background text */}
-        <div className="relative bg-text font-garalama tracking-widest text-[25em] flex flex-col overflow-x-hidden">
-          <div className="text-black text-center relative py-0 -top-28">
-            <span className="absolute top-0 left-0 text-white/80 text-center w-screen -z-1">
-              CAREER
-            </span>
-            <span className="relative">CAREER</span>
-          </div>
-
+        <div className="bg-text font-garalama tracking-widest text-[25em] flex flex-col overflow-x-hidden pt-4">
+          <h1 class="font-outline-2 text-center text-black hover:font-outline-4 relative py-0 -top-28">
+            CAREER
+          </h1>
+          <h1 class="font-outline-2 text-center text-black relative left-[-3em]  -top-[0.95em] whitespace-nowrap">
+            CAREER TECH
+          </h1>
+          {/* 
           <div className="lower-text text-black relative left-[-3em]  -top-[0.95em] whitespace-nowrap">
             <span className="absolute top-0 left-0 text-white/80 -z-1 text-nowrap">
               CAREER TECH
             </span>
             <span className="relative ">CAREER TECH</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Main Content */}
@@ -30,6 +31,10 @@ const Hero = () => {
             <h1>GDSC</h1>
             <h1 className="text-primary">2024</h1>
           </div>
+        </div>
+        {/* Badges */}
+        <div className="relative top-[-30em]">
+          <Badges />
         </div>
       </div>
     </div>

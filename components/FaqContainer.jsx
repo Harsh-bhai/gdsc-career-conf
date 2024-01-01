@@ -135,7 +135,7 @@ const FaqContainer = () => {
           Common Queries
         </div>
       </div>
-      <div className="flex flex-row items-center md:p-8 p-0 mt-12 md:mt-0 overflow-hidden -mt-32">
+      <div className="flex flex-row items-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32">
         <div className="faqs-container flex flex-row flex-1  z-1 m-0 max-w-7xl md:p-8 ml-6 md:ml-0">
           <div className="flex flex-col gap-3 items-center ">
             <div className="md:w-[70%] w-[100%] max-h-[50vh] overflow-y-scroll custom-scrollbar flex flex-col ">

@@ -2,6 +2,7 @@ import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
 import Faq from "@/components/faq";
 import TitleDescription from "@/components/titleDescription";
+import Section_two from "@/components/sec2";
 
 export default function Home() {
   const infoContainer = [
@@ -16,7 +17,7 @@ export default function Home() {
   return (
     <div className="text-white min-h-screen">
       <Hero />
-
+      <Section_two/>
       <TitleDescription
         title={infoContainer[0].title}
         description={infoContainer[0].description}

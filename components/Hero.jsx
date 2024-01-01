@@ -13,13 +13,6 @@ const Hero = () => {
           <h1 class="font-outline-2 text-center text-black relative left-[-3em]  -top-[0.95em] whitespace-nowrap">
             CAREER TECH
           </h1>
-          {/* 
-          <div className="lower-text text-black relative left-[-3em]  -top-[0.95em] whitespace-nowrap">
-            <span className="absolute top-0 left-0 text-white/80 -z-1 text-nowrap">
-              CAREER TECH
-            </span>
-            <span className="relative ">CAREER TECH</span>
-          </div> */}
         </div>
 
         {/* Main Content */}

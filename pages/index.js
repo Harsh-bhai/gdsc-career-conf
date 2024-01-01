@@ -9,7 +9,7 @@ export default function Home() {
     {
       title: "Sample Title",
       description:
-        "      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sunt sequi hic velit sint beatae odit quas eligendi, molestias, similique, veniam ipsa eum. Laborum magni molestiae cumque sunt quia dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rerum, possimus quas vel odit quae voluptatem cumque tempora illum? Atque!",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sunt sequi hic velit sint beatae odit quas eligendi, molestias, similique, veniam ipsa eum. Laborum magni molestiae cumque sunt quia dignissimos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia rerum, possimus quas vel odit quae voluptatem cumque tempora illum? Atque!",
       buttonLabel: "Register",
     },
   ];

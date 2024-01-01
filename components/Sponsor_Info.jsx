@@ -1,29 +1,12 @@
 import ArrowList_TD from "./sec3_arrow_comp";
-const style = {
-  sponsor: {
-    "-webkit-text-stroke-width": "1px",
-    "-webkit-text-stroke-color": "#EC003380",
-  },
-  center: {
-    top: "50%",
-    left: "40%",
-    margin: "-30px 0 0 -50px",
-  },
-};
-const Section_three = () => {
+const Sponsor_Info = () => {
   return (
     <section className="flex flex-col items-center">
       <div className="w-screen h-auto relative">
-        <div
-          className="text-[19.5vw] font-garalama text-black text-center z-0"
-          style={style.sponsor}
-        >
+        <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
           SPONSOR
         </div>
-        <div
-          className="absolute font-garalama text-4xl z-10"
-          style={style.center}
-        >
+        <div className="absolute font-garalama text-4xl z-10 bg-center">
           Want to be a sponser ?
         </div>
       </div>
@@ -59,4 +42,4 @@ const Section_three = () => {
     </section>
   );
 };
-export default Section_three;
+export default Sponsor_Info;

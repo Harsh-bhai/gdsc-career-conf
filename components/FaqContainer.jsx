@@ -75,13 +75,10 @@ const FaqContainer = () => {
   ];
 
   const faqTab = (question, reply, links, index) => {
-    const isActive = index === activeIndex;
-    const activeClass = isActive ? "border border-primary" : "";
-
     return (
       <>
         <div
-          className={`faq-tab group relative bg-primary/70 font-secondary p-3 text-light rounded-lg shadow-lg flex flex-col justify-center ${activeClass}`}
+          className={`faq-tab group relative bg-primary/70 -primary p-3 text-light border-b-[1px] border-primary shadow-lg flex flex-col justify-center`}
         >
           <input
             className="faq-input peer/input appearance-none"
@@ -102,14 +99,12 @@ const FaqContainer = () => {
           peer-checked/input:after:rotate-[135deg]
           "
           >
-            <h2 className="font-normal font-secondary text-base text-light  pr-2 md:text-[10px]/3 md:p-0">
+            <h2 className="font-normal text-light pr-2 text-base">
               {question}
             </h2>
           </label>
           <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-200 peer-checked/input:max-h-screen">
-            <h5 className="md:text-[0.85rem] font-secondary font-normal pt-2 w-[80%] opacity-70 text-[0.5rem]">
-              {reply}
-            </h5>
+            <h5 className="font-normal pt-2 w-[80%] opacity-70 ">{reply}</h5>
             {links ? (
               <a
                 href={links.includes("@gmail.com") ? `mailto:${links}` : links}
@@ -131,34 +126,38 @@ const FaqContainer = () => {
   };
 
   return (
-    <section
-      id="Faq"
-      className="faq-section flex flex-row items-center  md:p-8 p-0  overflow-hidden"
-    >
-      <div className="faqs-container flex flex-row flex-1  z-1 m-0 max-w-7xl p-8 ">
-        <div className="flex flex-col gap-3 items-center ">
-          <div className="text-light md:text-5xl text-4xl md:ml-0 ml-6 font-Satoshi tracking-wide font-bold mb-5 w-full">
-            Some of the frequently <br /> asked questions
-          </div>
-          <div className="md:w-[70%] w-[100%] max-h-[60vh] overflow-y-scroll custom-scrollbar grid gap-4 ">
-            <div className="grid gap-4 mr-3">
-              {faqData.map((data, index) => {
-                return faqTab(data.question, data.reply, data.links, index);
-              })}
+    <section id="Faq" className="faq-section flex flex-col relative">
+      <div className="w-screen h-auto relative ">
+        <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
+          QUESTIONS
+        </div>
+        <div className="absolute font-garalama text-4xl z-10 bg-center">
+          Common Queries
+        </div>
+      </div>
+      <div className="flex flex-row items-center md:p-8 p-0 overflow-hidden -mt-32">
+        <div className="faqs-container flex flex-row flex-1  z-1 m-0 max-w-7xl md:p-8 ml-6 md:ml-0">
+          <div className="flex flex-col gap-3 items-center ">
+            <div className="md:w-[70%] w-[100%] max-h-[50vh] overflow-y-scroll custom-scrollbar flex flex-col ">
+              <div className="grid gap-6 mr-3">
+                {faqData.map((data, index) => {
+                  return faqTab(data.question, data.reply, data.links, index);
+                })}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="image-container relative">
-        <Image
-          src="/faqBg.png"
-          width={400}
-          height={900}
-          alt=""
-          className=" absolute z-[-1]"
-        />
-        <div className=" h-fit">
-          <Image src="/faqImage.png" width={400} height={900} alt="" />
+        <div className="image-container relative h-[515px] w-[515px] md:block hidden">
+          <Image
+            src="/faqBg.png"
+            width={515}
+            height={515}
+            alt=""
+            className="absolute top-0 -left-12 -z-[1]"
+          />
+          <div className=" h-fit">
+            <Image src="/faqImage.png" width={402} height={500} alt="" />
+          </div>
         </div>
       </div>
     </section>

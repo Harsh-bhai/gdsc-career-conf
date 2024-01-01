@@ -6,7 +6,7 @@ const Sponsor_Info = () => {
         <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
           SPONSOR
         </div>
-        <div className="absolute font-garalama text-4xl z-10 bg-center">
+        <div className="absolute font-garalama translate-y-4 -translate-x-5 md:translate-y-0 md:translate-x-0 md:text-4xl z-10 bg-center">
           Want to be a sponser ?
         </div>
       </div>
@@ -36,7 +36,7 @@ const Sponsor_Info = () => {
           </div>
         </div>
       </div>
-      <button className="font-garalama w-64  bg-primary pt-2 pl-2 pb-2 pr-2 text-black rounded-sm mt-10 items-center">
+      <button className="font-garalama w-64  bg-primary p-2 text-black rounded-sm mt-10 items-center">
         SPONSOR US
       </button>
     </section>

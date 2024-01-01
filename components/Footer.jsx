@@ -32,13 +32,13 @@ const Footer = () => {
           </p>
           <div className="btn-div font-secondary flex flex-col gap-2 max-w-[100vw] md:max-w-full">
             <button
-              className="btn register bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-base md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
+              className="btn register bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
               onClick={registration}
             >
               REGISTER
             </button>
             <button
-              className="btn register bg-white text-black rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-base md:w-[60%] w-full mdLmr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
+              className="btn register bg-white text-black rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mdLmr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
               onClick={registration}
             >
               SPONSOR US

@@ -9,11 +9,11 @@ export default function Home() {
 
   return (
     <div className="text-white min-h-screen">
-      <section id ="/"><Hero /></section>
-      <section id ="careerconf"><About /></section>
-      <section id ="sponsor"><Sponsor_Info /></section>
-      <section id="speaker"><SpeakerRegister/></section>
-      <section id="about"><FaqContainer /></section>
+      <section className="my-16 md:my-4" id ="/"><Hero /></section>
+      <section className="my-16 md:my-4" id ="careerconf"><About /></section>
+      <section className="my-16 md:my-4" id ="sponsor"><Sponsor_Info /></section>
+      <section className="my-16 md:my-4" id="speaker"><SpeakerRegister/></section>
+      <section className="my-16 md:my-4" id="about"><FaqContainer /></section>
     </div>
   );
 }

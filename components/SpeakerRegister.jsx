@@ -8,7 +8,7 @@ const SpeakerRegister = () => {
         <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
           SPEAKER
         </div>
-        <div className="absolute font-garalama text-4xl z-10 bg-center">
+        <div className="absolute font-garalama md:text-4xl  translate-y-4 -translate-x-5 md:translate-y-0 md:translate-x-0 z-10 bg-center">
           Register as a Speaker
         </div>
       </div>

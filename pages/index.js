@@ -1,6 +1,5 @@
 import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
-import Faq from "@/components/faq";
 import TitleDescription from "@/components/titleDescription";
 import Section_two from "@/components/sec2";
 

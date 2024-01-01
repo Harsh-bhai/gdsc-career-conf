@@ -45,14 +45,14 @@ const Navbar = () => {
           <div className=" flex flex-col md:flex-row md:items-center md:space-x-12  mainitems my-24 md:my-4 space-y-6 md:space-y-0">
             {/* <Link  href={"/about"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>About</div></Link> */}
             {/* <Link  href={"/services"}><div onClick={toggle} className='hover:text-primary text-white cursor-pointer'>Services</div></Link> */}
-            <Link href={"#About"}>
+            {/* <Link href={"#About"}>
               <div
                 onClick={toggle}
                 className="hover:text-primary text-white cursor-pointer"
               >
                 GDSC-BITD
               </div>
-            </Link>
+            </Link> */}
             <Link href={"#careerconf"}>
               <div
                 onClick={toggle}
@@ -61,23 +61,23 @@ const Navbar = () => {
                 Career-Conf
               </div>
             </Link>
-            <Link href={"#PreviousEvents"}>
+            <Link href={"#sponsor"}>
               <div
                 onClick={toggle}
                 className="hover:text-primary text-white cursor-pointer"
               >
-                Our Work
+                Sponser
               </div>
             </Link>
-            <Link href={"#team"}>
+            <Link href={"#speaker"}>
               <div
                 onClick={toggle}
                 className="hover:text-primary text-white cursor-pointer"
               >
-                Team
+                Speaker
               </div>
             </Link>
-            <Link href={"#extras"}>
+            <Link href={"#about"}>
               <div
                 onClick={toggle}
                 className="hover:text-primary text-white cursor-pointer"

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import BgHeader from "./BgHeader";
 
 const FaqContainer = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -127,20 +128,12 @@ const FaqContainer = () => {
 
   return (
     <section id="Faq" className="faq-section flex flex-col relative">
-      <div className="w-screen h-auto relative overflow-x-hidden">
-        <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
-          QUESTIONS
-        </div>
-        <div className="absolute font-garalama md:text-7xl text-2xl translate-y-4 -translate-x-6
-        md:translate-y-0 md:-translate-x-40 z-10 bg-center">
-          Common Queries
-        </div>
-      </div>
-      <div className="flex flex-row items-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32">
-        <div className="faqs-container flex flex-row flex-1  z-1 m-0 max-w-7xl md:p-8 ml-6 md:ml-0">
-          <div className="flex flex-col gap-3 items-center ">
-            <div className="md:w-[70%] w-[100%] max-h-[50vh] overflow-y-scroll custom-scrollbar flex flex-col ">
-              <div className="grid gap-6 mr-3">
+      <BgHeader header={"FAQS"} bgHeader={"QUERIES"} />
+      <div className="flex flex-row items-center justify-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32 gap-24">
+        <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-8 ml-6 md:ml-0">
+          <div className="flex flex-col items-center ">
+            <div className="w-full max-h-[50vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
+              <div className="grid gap-6 mr-4">
                 {faqData.map((data, index) => {
                   return faqTab(data.question, data.reply, data.links, index);
                 })}

@@ -23,8 +23,11 @@ const Footer = () => {
   }
 
   return (
-    <footer id="Footer" className="p-8 md:p-4 bg-dark text-light">
-      <div className="grid grid-cols-3">
+    <footer
+      id="Footer"
+      className="mt-20 p-8 md:p-4 bg-dark text-light flex flex-col items-center"
+    >
+      <div className="grid md:grid-cols-3 grid-cols-2 md:w-5/6">
         <section className="flex-content w-full relative flex flex-col p-4">
           LOGO
           <p className="content-p font-tertiary opacity-60 mb-2">
@@ -45,7 +48,7 @@ const Footer = () => {
             </button>
           </div>
         </section>
-        <section className="flex-content flex-wrap relative flex flex-col p-4 pl-8 font-tertiary">
+        <section className="flex-content flex-wrap relative flex flex-col p-4 pl-8 md:pl-[40%] font-tertiary">
           <h3 className="text-lg font-primary text-light mb-4">Site</h3>
           {/* Update Links as needed */}
           {footerLinks.map((item, index) => (
@@ -60,11 +63,11 @@ const Footer = () => {
 
           {/* Other links */}
         </section>
-        <section className="flex-content relative flex flex-col p-4">
-          <h3 className="social-text ml-4 font-primary text-lg text-light mb-4">
+        <section className="flex-content relative flex flex-col md:p-4 -ml-8 mb-4 items-center md:w-auto w-screen ">
+          <h3 className="social-text font-primary text-lg text-light mb-4 md:block hidden">
             Socials
           </h3>
-          <div className="flex-socials w-full flex flex-row flex-nowrap gap-4">
+          <div className="flex-socials w-full flex flex-row flex-nowrap justify-center gap-4">
             <Link
               className="font-tertiary text-light my-2 mx-0 opacity-70"
               href="https://www.instagram.com/gdscbitd/"
@@ -103,7 +106,9 @@ const Footer = () => {
         <section className="flex-content relative flex p-4 pb-0 w-full">
           <p className="disclaimer mx-auto flex justify-center items-center gap-1.5 font-tertiary">
             Made with{" "}
-            <span className="font-semibold">3 AM milk powder! 🥛</span>
+            <span className="font-semibold">
+              3 AM milk <span className="text-primary">powder!</span> 🥛
+            </span>
           </p>
         </section>
       </div>

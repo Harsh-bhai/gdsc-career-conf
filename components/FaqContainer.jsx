@@ -131,7 +131,7 @@ const FaqContainer = () => {
         <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
           QUESTIONS
         </div>
-        <div className="absolute font-garalama md:text-7xl  translate-y-4 translate-x-2
+        <div className="absolute font-garalama md:text-7xl text-2xl translate-y-4 -translate-x-6
         md:translate-y-0 md:-translate-x-40 z-10 bg-center">
           Common Queries
         </div>

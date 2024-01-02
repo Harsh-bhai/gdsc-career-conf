@@ -16,7 +16,7 @@ const Badges = () => {
       <div className="relative flex overflow-hidden">
         <div
           className="animate-marquee1 whitespace-nowrap flex flex-row gap-12 mr-12"
-          style={{ animationDuration: `${badges.length * 4}s` }}
+          style={{ animationDuration: `${badges.length * 6}s` }}
         >
           <span></span>
           {badges.map((badge, index) => (
@@ -31,7 +31,7 @@ const Badges = () => {
 
         <div
           className="animate-marquee2 transition absolute top-0 whitespace-nowrap flex flex-row gap-12"
-          style={{ animationDuration: `${badges.length * 4}s` }}
+          style={{ animationDuration: `${badges.length * 6}s` }}
         >
           <span></span>
           {badges.map((badge, index) => (

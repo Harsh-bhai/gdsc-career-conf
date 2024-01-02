@@ -10,12 +10,12 @@ const About = () => {
         width={90}
         alt="not found"
       />
-      <div className="flex lg:flex-row gap-20 ml-5  mr-5 sm:flex-col flex-col items-center justify-center">
-        <div className="flex flex-col item-center lg:w-[40%] w-[90%]">
-          <div className=" font-garalama text-white text-4xl text-left">
+          <div className=" font-garalama text-white md:text-7xl text-2xl md:mb-20 mb-4 text-left">
             What is CareerConf ?{" "}
           </div>
-          <div className="text-justify text-sm mt-5">
+      <div className="flex lg:flex-row gap-20 ml-5  mr-5 sm:flex-col flex-col items-center justify-center">
+        <div className="flex flex-col item-center lg:w-[40%] w-[90%]">
+          <div className="text-justify text-base mt-5">
             Welcome to CareerConf, a one-day event by Google Developer Student
             Our goal is simple: bridge the knowledge gap and guide budding
             developers to explore varied career paths. At CareerConf, connect

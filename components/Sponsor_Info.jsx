@@ -6,7 +6,7 @@ const Sponsor_Info = () => {
         <div className="text-[19.5vw] font-garalama text-black text-center z-0 heading-outline">
           SPONSOR
         </div>
-        <div className="absolute font-garalama translate-y-4 -translate-x-5 md:translate-y-0 md:-translate-x-40 md:text-7xl z-10 bg-center">
+        <div className="absolute font-garalama translate-y-4 text-2xl -translate-x-10 md:translate-y-0 md:-translate-x-40 md:text-7xl z-10 bg-center">
           Why Sponsor Us ?
         </div>
       </div>

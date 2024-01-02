@@ -12,10 +12,8 @@ const Sponsor_Info = () => {
       </div>
       <div className="flex lg:flex-row relative w-screen gap-10 items-center  justify-center  flex-col ">
         <div className="lg:w-[40%] w-[90%] text-justify ml-5 mr-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type{" "}
+        Elevate your brand by sponsoring GDSC CareerConf – a pivotal one-day event by Google Developers Student Clubs, BIT-D, propelling students into diverse tech careers.<br/><br/>
+        Enjoy perks like promotional opportunities, targeted advertising, and a lasting bond with our community as a token of appreciation. Your support fuels our growth and expands our reach! 🌟💼
         </div>
         <div className="lg:w-[40%] w-[90%]">
           <div className="flex flex-col gap-10">

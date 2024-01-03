@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
         <div
           ref={ref}
-          className="navitems md:justify-end md:mr-20  bg-black z-50 flex flex-col md:flex-row md:items-center md:bg-inherit border-gray-700 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-full md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
+          className="navitems md:justify-end md:mr-20  bg-black z-50 flex flex-col md:flex-row md:items-center md:bg-inherit border-gray-700 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-[600%]  md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
         >
           <span
             className="absolute top-8 left-8

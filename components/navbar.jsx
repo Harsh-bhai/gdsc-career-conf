@@ -12,9 +12,11 @@ const Navbar = () => {
     if (ref.current.classList.contains("-translate-x-full")) {
       ref.current.classList.remove("-translate-x-full");
       ref.current.classList.add("translate-x-0");
+      document.body.style.overflow = "hidden"; // Disable scrolling
     } else if (ref.current.classList.contains("translate-x-0")) {
       ref.current.classList.remove("translate-x-0");
       ref.current.classList.add("-translate-x-full");
+      document.body.style.overflow = "auto"; // Disable scrolling
     }
   };
   const ref = useRef();
@@ -33,7 +35,7 @@ const Navbar = () => {
         </Link>
         <div
           ref={ref}
-          className="navitems md:justify-end md:mr-20  bg-black z-50 flex flex-col md:flex-row md:items-center md:bg-inherit border-gray-700 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-[600%]  md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
+          className="navitems md:justify-end md:mr-20  bg-black z-50 flex flex-col md:flex-row md:items-center md:bg-inherit border-gray-700 md:border-0 border-2 px-10 py-4 md:py-0 absolute top-0 left-0 transform transition-transform -translate-x-full h-[110vh]  md:h-auto md:w-full w-2/3 md:static md:translate-x-0  md:transition-none ease-in-out"
         >
           <span
             className="absolute top-8 left-8

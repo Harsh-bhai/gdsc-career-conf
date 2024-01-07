@@ -1,3 +1,5 @@
+"use client";
+
 import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
 import TitleDescription from "@/components/titleDescription";

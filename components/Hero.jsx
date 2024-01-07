@@ -1,18 +1,23 @@
 import React from "react";
-import Badges from "./Badges";
+import { motion } from "framer-motion";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="h-screen z-10">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="h-screen z-10"
+    >
       <div className="relative">
         {/* Background text */}
         <div className="bg-text font-garalama tracking-widest text-[20em] flex flex-col overflow-x-hidden pt-4 md:block hidden">
-          <h1 class="font-outline-2 text-center text-black hover:font-outline-4 relative py-0 -top-24">
+          <h1 className="font-outline-2 text-center text-black hover:font-outline-4 relative py-0 -top-24">
             CAREER
           </h1>
-          <h1 class="font-outline-2 text-center text-black relative left-[-3em]  -top-[0.85em] whitespace-nowrap">
+          <h1 className="font-outline-2 text-center text-black relative left-[-3em] -top-[0.85em] whitespace-nowrap">
             TECH TECH TECH
           </h1>
         </div>
@@ -25,7 +30,7 @@ const Hero = () => {
               <span>CONF</span>
             </h1>
           </div>
-          <div className="flex md:flex-row flex-col md:justify-between items-start">
+          <div className="flex md:flex-row md:px-40 flex-col md:justify-between items-start">
             <h1>GDSC</h1>
             <h1 className="text-primary">2024</h1>
           </div>
@@ -54,7 +59,7 @@ const Hero = () => {
           <Badges />
         </div> */}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

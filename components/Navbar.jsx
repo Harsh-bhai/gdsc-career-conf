@@ -18,7 +18,7 @@ const Navbar = () => {
   const ref = useRef();
   return (
     <div className="md:sticky fixed md:mb-0 md:top-0 md:z-50 w-full bg-black z-[100]">
-      <div className="w-full navbar flex flex-col md:flex-row items-center text-white md:p-2 shadow-lg py-4 ">
+      <div className="w-full navbar flex flex-col md:flex-row items-center text-white md:p-2 shadow-lg py-0 ">
         <div className=" top-0 left-0 absolute m-7 md:m-10 text-3xl font-thin md:hidden">
           {" "}
           <GiHamburgerMenu onClick={toggle} />

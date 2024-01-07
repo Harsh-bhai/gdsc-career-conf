@@ -127,10 +127,8 @@ body {
 
 .custom-scrollbar {
   /* Set a fixed height for the container */
-  overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: thin; /* For Firefox */
-  /* scrollbar-color: #333 #999; Color of the scrollbar track and thumb */
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -164,4 +162,12 @@ body {
   /* Style the scrollbar track */
   border-radius: 10px;
   background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  /* Reset or remove the scrollbar styles for mobile */
+  ::-webkit-scrollbar {
+    /* For Webkit (Chrome, Safari, newer versions of Edge) */
+    display: none;
+  }
 }

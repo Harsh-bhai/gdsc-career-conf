@@ -1,5 +1,4 @@
 import React from "react";
-import TitleDescription from "./titleDescription";
 import BgHeader from "./BgHeader";
 import Image from "next/image";
 

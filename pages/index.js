@@ -2,14 +2,13 @@
 
 import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
-import TitleDescription from "@/components/titleDescription";
-import Sponsor_Info from "@/components/Sponsor_Info";
+import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
 
 export default function Home() {
   return (
-    <div className="text-white min-h-screen">
+    <div className="text-white min-h-screen overflow-x-hidden">
       <section className="my-16 md:my-4" id="hero">
         <Hero />
       </section>
@@ -17,7 +16,7 @@ export default function Home() {
         <About />
       </section>
       <section className="my-16 md:my-4" id="sponsor">
-        <Sponsor_Info />
+        <Collaborate />
       </section>
       <section className="my-16 md:my-4" id="speaker">
         <SpeakerRegister />

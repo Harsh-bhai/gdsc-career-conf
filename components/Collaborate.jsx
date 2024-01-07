@@ -1,6 +1,6 @@
 import BgHeader from "./BgHeader";
 import Image from "next/image";
-const Sponsor_Info = () => {
+const Collaborate = () => {
   return (
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
@@ -19,8 +19,8 @@ const Sponsor_Info = () => {
             <span className="text-primary">collaboration</span> to cherish the
             notion.
           </p>
-          <div className="buttons grid grid-cols-2 gap-12">
-            <button className="bg-white font-secondary  hover:bg-primary text-black py-2 px-6 rounded-lg ">
+          <div className="buttons grid grid-cols-2 md:gap-12 gap-8">
+            <button className="bg-white font-secondary  hover:bg-primary text-black py-2 md:px-6 px-2 rounded-lg ">
               Sponsor Us
             </button>
             <button className="bg-white font-secondary  hover:bg-primary text-black py-2 px-6 rounded-lg">
@@ -41,4 +41,4 @@ const Sponsor_Info = () => {
     </section>
   );
 };
-export default Sponsor_Info;
+export default Collaborate;

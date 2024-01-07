@@ -9,7 +9,7 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-screen z-10"
+      className="h-screen z-10 md:mt-0 mt-44"
     >
       <div className="relative">
         {/* Background text */}

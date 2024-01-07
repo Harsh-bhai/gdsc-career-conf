@@ -8,6 +8,7 @@
   }
   .heading-outline {
     -webkit-text-stroke: 1px var(--primary-fade-color);
+    text-overflow: clip;
   }
 }
 
@@ -68,6 +69,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -78,12 +80,13 @@ body {
   background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   background-color: var(--dark-color);
 }
 
 .custom-scrollbar {
   /* Set a fixed height for the container */
+  overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: thin; /* For Firefox */
   /* scrollbar-color: #333 #999; Color of the scrollbar track and thumb */

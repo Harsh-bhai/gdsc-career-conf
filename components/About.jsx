@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="w-screen grid md:grid-cols-2 md:gap-60 items-center px-4">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ml-26">
         <div className=" font-garalama text-white md:text-[6em] text-3xl md:mb-12 mb-4 self-start	md:ml-40 ml-4	">
           <div className="md:text-7xl md:py-12 py-4">What is </div>
           Career<span className="text-primary">Conf</span>?
@@ -18,7 +18,7 @@ const About = () => {
           REGISTRATION
         </button>
       </div>
-      <div className="about-asset md:block hidden">
+      <div className="about-asset md:block hidden md:ml-8">
         <Image
           src="/About.png"
           alt="About"
@@ -27,13 +27,6 @@ const About = () => {
           className="object-cover rounded-lg"
         />
       </div>
-      <Image
-        className="right-0 absolute"
-        src="sec2_message.svg"
-        height={90}
-        width={90}
-        alt="not found"
-      />
     </section>
   );
 };

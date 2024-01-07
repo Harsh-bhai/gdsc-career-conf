@@ -4,8 +4,8 @@ const Sponsor_Info = () => {
   return (
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
-      <div className="grid grid-cols-2 w-screen gap-4 items-center flex-col -mt-20 ml-16">
-        <div className="flex flex-col gap-12 text-lg text-justify mx-auto md:w-4/5 w-full ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 items-center md:-mt-20 md:ml-36">
+        <div className="flex flex-col gap-12 text-lg md:p-0 px-8 text-justify md:mx-auto md:w-4/5 w-full ">
           <p>
             Invest - time, resources and energy at CareerConf.{" "}
             <span className="text-primary">But why?</span>
@@ -19,7 +19,7 @@ const Sponsor_Info = () => {
             <span className="text-primary">collaboration</span> to cherish the
             notion.
           </p>
-          <div className="buttons flex flex-row gap-12">
+          <div className="buttons grid grid-cols-2 gap-12">
             <button className="bg-white font-secondary  hover:bg-primary text-black py-2 px-6 rounded-lg ">
               Sponsor Us
             </button>
@@ -28,7 +28,7 @@ const Sponsor_Info = () => {
             </button>
           </div>
         </div>
-        <div className="">
+        <div className="md:block hidden">
           <Image
             src="/About.png"
             alt="About"

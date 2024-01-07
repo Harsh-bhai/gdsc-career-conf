@@ -1,77 +1,33 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import BgHeader from "./BgHeader";
 
 const FaqContainer = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
-
   const faqData = [
     {
-      question: "What is Hackathon?",
+      question: "How can I register for CareerConf?",
       reply:
-        "A hackathon is a creative, time-bound gathering where individuals collaborate to rapidly innovate, typically within a technology-focused context, fostering solutions and ideas.",
+        "Stay tuned! We'll soon be releasing a range of tickets for CareerConf, available for purchase both online and offline. Keep an eye on our website for updates on ticket options and secure your spot for CareerConf.",
     },
     {
-      question: "Who can participate?? ",
+      question: "Who should attend CareerConf?",
       reply:
-        "OpinHacks welcomes all and presents you with a chance to be an enthusiastic coder who is passionate about learning, developing and growing together.",
+        "CareerConf is open to anyone interested in exploring tech careers or looking to enhance their skills in the field. From students and recent graduates to professionals looking to advance their careers in the tech industry, CareerConf offers valuable insights and networking opportunities for everyone.",
     },
     {
-      question:
-        "Can we bring our own team or do we have to form a team at the event?",
+      question: "Will there be food and refreshments?",
       reply:
-        "Participants can either bring their own team or form a team at the event. The team size should consist of 2 to 4 individuals.",
+        "Yes, we've got you covered! It's our way of ensuring you stay energized and focused on soaking in all the valuable information and networking opportunities CareerConf has to offer.",
     },
     {
-      question: "Is there any registration fee?",
-      reply: "FREE. This hackathon is free for all participants.",
-    },
-    {
-      question: "Where can I find participant guidebook?",
-      links:
-        "https://www.notion.so/opinhacksguide/Participant-Guidebook-17a10c97f0864b92bfa93ae532b0e906",
-    },
-    {
-      question: "What is the Code of Conduct for OpinHacks?",
-      reply: "Code of Conduct:-",
-      links:
-        "https://www.notion.so/opinhacksguide/Code-of-Conduct-665acd3aa6d945fe90c788fcc977d16e",
-    },
-    {
-      question: "Accommodation /food??",
+      question: "How can I stay updated on event details?",
       reply:
-        " Don't worry about where to stay and what to eat! We've got you covered. All participants will be cozy and comfortable in the college hostels with all the necessary amenities and meals. It's time to hack and relax! ",
+        "Stay in the loop by following us on social media. We'll keep you posted on important updates, speaker announcements, and any changes to the schedule. Don't miss out on the latest information—connect with us online!",
     },
     {
-      question: "What should you bring with you for the hackathon?",
+      question: "What is the agenda for the day? ",
       reply:
-        "A laptop and necessary charging equipment Any software or hardware tools needed for your project A valid government-issued ID for verification purposes A positive attitude towards collaboration",
-    },
-    {
-      question: "Where will the event take place?",
-      reply: `The venue of the event will be Bhilai Institute of Technology, Durg.`,
-      links: "https://maps.app.goo.gl/Xg6qmbtKg8DXxEgZ8",
-    },
-    {
-      question: "Where can you find teammates?",
-      reply:
-        "If you do not have a team and are looking for people with a specific tech stack, you can join our discord server to network with others and form your teams.",
-      links: "https://discord.gg/KnthBxzApR",
-    },
-    {
-      question:
-        "More specific themes and problem statement will be disclosed soon??",
-      reply:
-        "Whichever track you choose, you can ideate & build either a software or a hardware project!",
-    },
-    {
-      question: "Have a question aside from these?",
-      reply: "Reach out to us at : ",
-      links: "opinhacks@gmail.com",
+        "The day will be packed with informative sessions, panel discussions, and networking opportunities. Check out the detailed schedule once it's out to plan your tech-packed adventure to make the most of CareerConf.🚀",
     },
   ];
 
@@ -79,16 +35,13 @@ const FaqContainer = () => {
     return (
       <>
         <div
-          className={`faq-tab group relative bg-primary/70 -primary p-3 text-light border-b-[1px] border-primary shadow-lg flex flex-col justify-center`}
+          className={`faq-tab group relative bg-primary/70 p-3 text-lg border-b-[1px] border-primary shadow-lg flex flex-col justify-center`}
         >
           <input
             className="faq-input peer/input appearance-none"
             type="checkbox"
             name="faq"
             id={`id${index}`}
-            onChange={() => {
-              handleClick(index);
-            }}
           />
           <label
             htmlFor={`id${index}`}
@@ -100,12 +53,10 @@ const FaqContainer = () => {
           peer-checked/input:after:rotate-[135deg]
           "
           >
-            <h2 className="font-normal text-light pr-2 text-base">
-              {question}
-            </h2>
+            <h2 className="font-normal text-light pr-2">{question}</h2>
           </label>
           <div className="faq-content max-h-0 overflow-hidden ease-in-out duration-200 peer-checked/input:max-h-screen">
-            <h5 className="font-normal pt-2 w-[80%] opacity-70 ">{reply}</h5>
+            <h5 className="pt-2 w-[80%] opacity-70 ">{reply}</h5>
             {links ? (
               <a
                 href={links.includes("@gmail.com") ? `mailto:${links}` : links}
@@ -127,12 +78,15 @@ const FaqContainer = () => {
   };
 
   return (
-    <section id="Faq" className="faq-section flex flex-col relative">
+    <section
+      id="Faq"
+      className="faq-section flex flex-col relative md:h-screen md:p-0 p-4"
+    >
       <BgHeader header={"FAQS"} bgHeader={"QUERIES"} />
       <div className="flex flex-row items-center justify-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32 gap-24">
         <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-8 ml-6 md:ml-0">
           <div className="flex flex-col items-center ">
-            <div className="w-full max-h-[50vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
+            <div className="w-full h-[40vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
               <div className="grid gap-6 mr-4">
                 {faqData.map((data, index) => {
                   return faqTab(data.question, data.reply, data.links, index);

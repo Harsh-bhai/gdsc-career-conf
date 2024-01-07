@@ -2,6 +2,7 @@ import React from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { title: "Home", link: "/" },
@@ -29,9 +30,15 @@ const Footer = () => {
     >
       <div className="grid md:grid-cols-3 grid-cols-2 md:w-5/6">
         <section className="flex-content w-full relative flex flex-col p-4">
-          LOGO
+          <Image
+            src="/gdsclogo.png"
+            width={100}
+            height={70}
+            alt="We want a logo"
+            className="p-4"
+          />
           <p className="content-p font-tertiary opacity-60 mb-2">
-            A battle through time.
+            {`Think > Act > Achieve`}
           </p>
           <div className="btn-div font-secondary flex flex-col gap-2 max-w-[100vw] md:max-w-full">
             <button
@@ -55,7 +62,7 @@ const Footer = () => {
             <Link
               key={index}
               href={item.link}
-              className="font-tertiary text-light my-2 mx-0 opacity-70 w-fit"
+              className="font-tertiary text-light my-2 mx-0 opacity-70 w-fit hover:text-primary"
             >
               {item.title}
             </Link>
@@ -76,7 +83,7 @@ const Footer = () => {
             >
               <AiFillInstagram
                 size="2rem"
-                className="socials-icon text-primary"
+                className="socials-icon text-primary hover:text-white"
               />
             </Link>
             <Link
@@ -87,7 +94,7 @@ const Footer = () => {
             >
               <AiFillLinkedin
                 size="2rem"
-                className="socials-icon text-primary"
+                className="socials-icon text-primary hover:text-white"
               />
             </Link>
             <Link
@@ -96,7 +103,10 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaXTwitter size="2rem" className="socials-icon text-primary" />
+              <FaXTwitter
+                size="2rem"
+                className="socials-icon text-primary hover:text-white"
+              />
             </Link>
           </div>
         </section>

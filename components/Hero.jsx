@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
 
         {/* Location and Venue */}
-        <div className="p-8 relative md:-top-[11em] top-[15em] left-1/2 transform -translate-x-1/2 flex flex-col gap-8 md:text-3xl text-xl">
+        <div className="p-8 relative md:-top-[13em] top-[15em] left-1/2 transform -translate-x-1/2 flex flex-col gap-8 md:text-3xl text-xl">
           <div className="quote text-center">
             A <span className="text-primary">one-day conference</span> to infuse
             fresh perspectives.

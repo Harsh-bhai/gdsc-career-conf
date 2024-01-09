@@ -16,11 +16,8 @@ const Footer = () => {
   function discordlink() {
     // window.open("https://discord.gg/KnthBxzApR");
   }
-  function registration() {
-    // window.open("https://lu.ma/opin-hacks");
-  }
   function sponsor_us() {
-    // window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
+    window.open("https://forms.gle/Tc7iLKtAc3yMFiND8");
   }
 
   return (
@@ -41,15 +38,15 @@ const Footer = () => {
             {`Think > Act > Achieve`}
           </p>
           <div className="btn-div font-secondary flex flex-col gap-2 max-w-[100vw] md:max-w-full">
-            <button
-              className="btn register bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
-              onClick={registration}
+            <Link
+              href={"/register"}
+              className="btn register flex items-center justify-center bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
             >
               REGISTER
-            </button>
+            </Link>
             <button
-              className="btn register bg-white text-black rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mdLmr-[4%] mr-0 my-0.5 mx-0 md:p-3 p-1"
-              onClick={registration}
+              className="btn register bg-white text-black rounded-lg hover:scale-105 transition ease-in duration-600 md:text-2xl text-xs md:w-[60%] w-full mr-0 my-0.5 mx-0 md:p-3 p-1"
+              onClick={sponsor_us}
             >
               SPONSOR US
             </button>

@@ -6,7 +6,7 @@ const Collaborate = () => {
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
       <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center md:-mt-20 md:w-5/6">
-        <div className="flex flex-col gap-12 text-lg md:p-0 px-4 md:text-left text-center md:mx-auto w-full ">
+        <div className="flex flex-col gap-12 text-base md:p-0 px-4 md:text-left text-center md:mx-auto w-full ">
           <p>
             Invest - time, resources and energy at CareerConf.{" "}
             <span className="text-primary">But why?</span>

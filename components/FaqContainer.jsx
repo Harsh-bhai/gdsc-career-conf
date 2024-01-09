@@ -35,7 +35,7 @@ const FaqContainer = () => {
     return (
       <>
         <div
-          className={`faq-tab group relative bg-primary/70 p-3 text-lg border-b-[1px] border-primary shadow-lg flex flex-col justify-center`}
+          className={`faq-tab group relative bg-primary/70 p-3 md:text-lg text-base border-b-[1px] border-primary shadow-lg flex flex-col justify-center`}
         >
           <input
             className="faq-input peer/input appearance-none"
@@ -86,7 +86,7 @@ const FaqContainer = () => {
       <div className="flex flex-row items-center justify-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32 gap-24">
         <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-8 ml-6 md:ml-0">
           <div className="flex flex-col items-center ">
-            <div className="w-full md:h-[40vh] h-[70vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
+            <div className="w-full md:h-[40vh] h-[60vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
               <div className="grid gap-6 mr-4">
                 {faqData.map((data, index) => {
                   return faqTab(data.question, data.reply, data.links, index);

@@ -10,7 +10,7 @@ const About = () => {
           Career<span className="text-primary">Conf</span>?
         </div>
         <div className="flex flex-col">
-          <div className="md:text-xl text-lg mt-5 md:text-left text-center">
+          <div className="md:text-xl text-base mt-5 md:text-left text-center">
             {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - let's dive-in :)`}
           </div>
         </div>

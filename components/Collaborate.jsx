@@ -4,8 +4,8 @@ const Collaborate = () => {
   return (
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 items-center md:-mt-20 md:ml-36">
-        <div className="flex flex-col gap-12 text-lg md:p-0 px-8 text-justify md:mx-auto md:w-4/5 w-full ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center md:-mt-20 md:w-5/6">
+        <div className="flex flex-col gap-12 text-lg md:p-0 px-8 md:text-left text-center md:mx-auto w-full ">
           <p>
             Invest - time, resources and energy at CareerConf.{" "}
             <span className="text-primary">But why?</span>
@@ -28,13 +28,13 @@ const Collaborate = () => {
             </button>
           </div>
         </div>
-        <div className="md:block hidden">
+        <div className="md:block hidden justify-self-center">
           <Image
             src="/About.png"
             alt="About"
             height={500}
             width={500}
-            className="ml-16 object-cover rounded-lg"
+            className="object-cover rounded-lg"
           />
         </div>
       </div>

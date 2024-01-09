@@ -14,13 +14,13 @@ const footerLinks = [
 
 const Footer = () => {
   function discordlink() {
-    window.open("https://discord.gg/KnthBxzApR");
+    // window.open("https://discord.gg/KnthBxzApR");
   }
   function registration() {
-    window.open("https://lu.ma/opin-hacks");
+    // window.open("https://lu.ma/opin-hacks");
   }
   function sponsor_us() {
-    window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
+    // window.open("https://forms.gle/xzP1vVgXWMBpSdHF9");
   }
 
   return (

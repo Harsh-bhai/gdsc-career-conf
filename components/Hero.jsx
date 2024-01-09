@@ -9,11 +9,11 @@ const Hero = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="h-screen z-10 md:mt-0 mt-44"
+      className="h-[80vh] md:h-screen z-10 md:mt-0 mt-44"
     >
       <div className="relative">
         {/* Background text */}
-        <div className="bg-text font-garalama tracking-widest text-[20em] flex flex-col overflow-x-hidden pt-4 md:block hidden">
+        <div className="bg-text font-garalama tracking-widest text-[17vw] flex flex-col overflow-x-hidden pt-4 md:block hidden">
           <h1 className="font-outline-2 text-center text-black hover:font-outline-4 relative py-0 -top-24">
             CAREER
           </h1>
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
 
         {/* Main Content */}
-        <div className="main-text absolute md:top-1/4 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-secondary md:text-[15em] text-7xl overflow-hidden">
+        <div className="main-text absolute md:top-1/4 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 font-secondary md:text-[13vw] text-7xl overflow-hidden">
           <div className="flex justify-center items-center h-full mx-auto whitespace-nowrap">
             <h1 className="md:text-center flex md:flex-row flex-col md:gap-20">
               <span>CAREER</span>

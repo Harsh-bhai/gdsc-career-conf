@@ -1,15 +1,14 @@
-import React from "react";
 import BgHeader from "./BgHeader";
 import Image from "next/image";
 
 const SpeakerRegister = () => {
   return (
-    <div className="">
+    <div className="flex flex-col items-center">
       <BgHeader bgHeader={"SPEAKER"} header={"BE A SPEAKER"} />
 
-      <div className="grid md:grid-cols-2 gap-4 items-center flex-col md:-mt-20 md:ml-28">
-        <section className="flex flex-col items-start text-lg text-justify text-center p-8 md:p-0 mx-auto md:w-4/5">
-          <div className="mb-8 text-lg flex flex-col gap-4 text-justify ">
+      <div className="grid md:grid-cols-2 gap-12 items-center flex-col md:-mt-20 md:w-5/6">
+        <section className="flex flex-col items-start text-lg md:text-left text-center p-8 md:p-0 mx-auto">
+          <div className="mb-8 text-lg flex flex-col gap-4">
             <p>
               Do you have something to{" "}
               <span className="text-primary">share</span> with the world?
@@ -31,13 +30,15 @@ const SpeakerRegister = () => {
           </div>
         </section>
 
-        <Image
-          src={"/Speaker.png"}
-          height={600}
-          width={650}
-          className="ml-8 md:block hidden"
-          alt="Speaker Register"
-        />
+        <div className="md:block hidden justify-self-center">
+          <Image
+            src={"/Speaker.png"}
+            height={600}
+            width={650}
+            className="md:block hidden"
+            alt="Speaker Register"
+          />
+        </div>
       </div>
     </div>
   );

@@ -83,7 +83,7 @@ const Navbar = () => {
                 About
               </div>
             </Link>
-            <Link href={"#extras"}>
+            <Link href={"/register"}>
               <button className="inline-flex text-black font-thin font-secondary bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-white rounded text-xl">
                 REGISTER
               </button>

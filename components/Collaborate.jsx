@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BgHeader from "./BgHeader";
 import Image from "next/image";
 const Collaborate = () => {
@@ -20,12 +21,24 @@ const Collaborate = () => {
             notion.
           </p>
           <div className="buttons grid grid-cols-2 md:gap-12 gap-8">
-            <button className="bg-white font-secondary  hover:bg-primary text-black py-2 md:px-6 px-2 rounded-lg ">
+            <Link
+              href={
+                "https://drive.google.com/file/d/1CZMrp4d9Q4DX2wBCWQhr4UUyKeOQNMvH/view?usp=sharing"
+              }
+              target="_blank"
+              className="bg-white font-secondary text-center hover:bg-primary text-black py-2 md:px-6 px-2 rounded-lg "
+            >
               Sponsor Us
-            </button>
-            <button className="bg-white font-secondary  hover:bg-primary text-black py-2 px-6 rounded-lg">
+            </Link>
+            <Link
+              href={
+                "https://drive.google.com/file/d/1gtBK18q7Z3ylgh9wy7R6gcHhKLZDCFHA/view?usp=sharing"
+              }
+              target="_blank"
+              className="bg-white font-secondary text-center hover:bg-primary text-black py-2 px-6 rounded-lg"
+            >
               Partner with Us
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:block hidden justify-self-center">

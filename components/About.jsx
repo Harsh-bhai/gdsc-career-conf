@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -13,9 +14,12 @@ const About = () => {
             {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - let's dive-in :)`}
           </div>
         </div>
-        <button className="font-garalama text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-black rounded-md justify-self-start md:self-start hover:bg-white mt-8">
+        <Link
+          href={"/register"}
+          className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-black rounded-md justify-self-start md:self-start hover:bg-white mt-8"
+        >
           REGISTRATION
-        </button>
+        </Link>
       </div>
       <div className="about-asset md:block hidden justify-self-center mt-8">
         <Image

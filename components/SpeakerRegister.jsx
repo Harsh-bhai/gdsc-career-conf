@@ -1,3 +1,4 @@
+import Link from "next/link";
 import BgHeader from "./BgHeader";
 import Image from "next/image";
 
@@ -24,9 +25,13 @@ const SpeakerRegister = () => {
             </p>
           </div>
           <div className="flex md:justify-start w-full justify-center">
-            <button className="inline-flex text-black font-secondary bg-white border-0 py-2 px-6 focus:outline-none hover:bg-primary rounded text-lg">
+            <Link
+              href={"https://forms.gle/Tc7iLKtAc3yMFiND8"}
+              target="_blank"
+              className="inline-flex text-black font-secondary bg-white border-0 py-2 px-6 focus:outline-none hover:bg-primary rounded text-lg"
+            >
               Register Speaker
-            </button>
+            </Link>
           </div>
         </section>
 

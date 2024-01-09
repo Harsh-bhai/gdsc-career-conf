@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="w-screen grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto">
       <div className="flex flex-col items-center mx-auto">
-        <div className=" font-garalama text-white md:text-[5vw] text-3xl md:mb-12 mb-4 self-start">
+        <div className=" font-garalama text-white md:text-[5vw] text-3xl md:mb-12 mb-4 md:pl-0 pl-4 self-start">
           <div className="md:text-[3vw] md:py-12 py-4">What is </div>
           Career<span className="text-primary">Conf</span>?
         </div>

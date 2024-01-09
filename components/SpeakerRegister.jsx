@@ -8,7 +8,7 @@ const SpeakerRegister = () => {
       <BgHeader bgHeader={"SPEAKER"} header={"BE A SPEAKER"} />
 
       <div className="grid md:grid-cols-2 gap-12 items-center flex-col md:-mt-20 md:w-5/6">
-        <section className="flex flex-col items-start text-lg md:text-left text-center p-8 md:p-0 mx-auto">
+        <section className="flex flex-col items-start text-lg md:text-left text-center p-4 md:p-0 mx-auto">
           <div className="mb-8 text-lg flex flex-col gap-4">
             <p>
               Do you have something to{" "}

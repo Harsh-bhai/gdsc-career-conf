@@ -80,13 +80,13 @@ const FaqContainer = () => {
   return (
     <section
       id="Faq"
-      className="faq-section flex flex-col relative md:h-screen md:p-0 p-4"
+      className="faq-section flex flex-col relative md:h-screen md:p-0 p-2"
     >
       <BgHeader header={"FAQS"} bgHeader={"QUERIES"} />
       <div className="flex flex-row items-center justify-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32 gap-24">
         <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-8 ml-6 md:ml-0">
           <div className="flex flex-col items-center ">
-            <div className="w-full h-[40vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
+            <div className="w-full md:h-[40vh] h-[70vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
               <div className="grid gap-6 mr-4">
                 {faqData.map((data, index) => {
                   return faqTab(data.question, data.reply, data.links, index);

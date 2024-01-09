@@ -6,7 +6,7 @@ const Collaborate = () => {
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
       <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center md:-mt-20 md:w-5/6">
-        <div className="flex flex-col gap-12 text-lg md:p-0 px-8 md:text-left text-center md:mx-auto w-full ">
+        <div className="flex flex-col gap-12 text-lg md:p-0 px-4 md:text-left text-center md:mx-auto w-full ">
           <p>
             Invest - time, resources and energy at CareerConf.{" "}
             <span className="text-primary">But why?</span>
@@ -26,7 +26,7 @@ const Collaborate = () => {
                 "https://drive.google.com/file/d/1CZMrp4d9Q4DX2wBCWQhr4UUyKeOQNMvH/view?usp=sharing"
               }
               target="_blank"
-              className="bg-white font-secondary text-center hover:bg-primary text-black py-2 md:px-6 px-2 rounded-lg "
+              className="bg-white flex items-center font-secondary justify-center hover:bg-primary text-black py-2 md:px-6 px-2 rounded-lg "
             >
               Sponsor Us
             </Link>
@@ -35,7 +35,7 @@ const Collaborate = () => {
                 "https://drive.google.com/file/d/1gtBK18q7Z3ylgh9wy7R6gcHhKLZDCFHA/view?usp=sharing"
               }
               target="_blank"
-              className="bg-white font-secondary text-center hover:bg-primary text-black py-2 px-6 rounded-lg"
+              className="bg-white flex items-center font-secondary justify-center hover:bg-primary text-black py-2 px-6 rounded-lg"
             >
               Partner with Us
             </Link>

@@ -84,7 +84,7 @@ const Navbar = () => {
               </div>
             </Link>
             <Link href={"/register"}>
-              <button className="inline-flex text-black font-thin font-secondary bg-red-600 border-0 py-1 px-4 focus:outline-none hover:bg-white rounded text-xl">
+              <button className="inline-flex text-black font-thin font-secondary bg-primary border-0 py-1 px-4 focus:outline-none hover:bg-white rounded text-xl">
                 REGISTER
               </button>
             </Link>

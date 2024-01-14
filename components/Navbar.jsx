@@ -23,10 +23,10 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", link: "/" },
-  { title: "Sponsors", link: "/" },
-  { title: "Speakers", link: "/" },
-  { title: "About", link: "/" },
+  { title: "Career Conf", link: "#careerconf" },
+  { title: "Sponsors", link: "#sponsor" },
+  { title: "Speakers", link: "#speaker" },
+  { title: "About", link: "#about" },
 ];
 
 export default function App() {
@@ -40,10 +40,10 @@ export default function App() {
     >
       <div className="md-nav md:flex md:flex-row gap-4 items-center bg-dark p-4 hidden px-20">
         {/* Logo */}
-        <div className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2">
-          <Image src="/gdsclogo.png" alt="" height={30} width={40} />
-          GDSCBITD
-        </div>
+        <Link href={"#hero"} className="flex flex-row  items-center mr-auto text-xl text-white font-secondary gap-2">
+          <Image src="/logo 3.png" alt="" height={30 * 2} width={40 * 2} />
+          {/* GDSCBITD */}
+        </Link>
 
         {/* Nav */}
         <ul className="flex flex-row gap-12 items-center">
@@ -65,8 +65,8 @@ export default function App() {
       <div className="sm-nav w-screen md:hidden flex flex-row items-center bg-dark justify-between px-4">
         {/* Logo */}
         <div className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2">
-          <Image src="/gdsclogo.png" alt="" height={30} width={40} />
-          GDSCBITD
+          <Image src="/logo 3.png" alt="" height={30 *2} width={40 *2} />
+          {/* GDSCBITD */}
         </div>
 
         {/* Nav */}

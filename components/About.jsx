@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+  const arrowinfo = [
+    "Get To Know About 	The Unexplored Paths In Tech",
+    "Deep Dive Into Current Trends In the Tech",
+    "Learn About Emerging Fields In Tech",
+    "Connect With Like Minded Individuals and Professionals",
+  ];
   return (
     <section className="w-screen grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto">
       <div className="flex flex-col items-center mx-auto">
@@ -31,6 +37,13 @@ const About = () => {
           className="object-cover rounded-lg"
         />
       </div>
+        {/* <div className="md:block hidden justify-self-center ">
+          {arrowinfo.map((item,index)=>{
+            return(
+                <sec2_arrow_comp key={index} des={item}/>
+            )
+          })}
+        </div> */}
     </section>
   );
 };

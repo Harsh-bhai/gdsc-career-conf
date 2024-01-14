@@ -17,6 +17,7 @@ export default function Home() {
       </section>
       <section className="my-16 md:my-4" id="sponsor">
         <Collaborate />
+        
       </section>
       <section className="" id="speaker">
         <SpeakerRegister />

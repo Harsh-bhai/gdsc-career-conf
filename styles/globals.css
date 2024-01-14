@@ -8,23 +8,39 @@
     background: linear-gradient(0deg, #ffffff30 0%, var(--primary-color) 100%);
   }
 
-  .font-outline-2 {
-    -webkit-text-stroke: 2px var(--primary-bg-color);
+  .bg-gradient-top {
+    background: radial-gradient(
+      600px circle at 100% 20%,
+      var(--primary-color),
+      #101111
+    );
   }
-  .heading-outline {
-    /* -webkit-text-stroke: 1px var(--primary-fade-color); */
+
+  .bg-gradient-bottom {
+    background: radial-gradient(
+      600px circle at 100% 120%,
+      var(--primary-color),
+      #101111
+    );
+  }
+
+  /* .font-outline-2 {
+    -webkit-text-stroke: 2px var(--primary-bg-color);
+  } */
+  /* .heading-outline {
+    -webkit-text-stroke: 1px var(--primary-fade-color);
     text-overflow: clip;
   }
 
   .heading-outline span {
     animation: wave-text 3s infinite alternate;
-  }
+  } */
 }
 
 /* .heading-outline span:nth-child(1) {
   animation-delay: 0.2s;
 } */
-
+/* 
 @keyframes wave-text {
   0% {
     -webkit-text-stroke: 1px #484848;
@@ -56,7 +72,7 @@
     -webkit-text-stroke: 1px #484848;
     text-shadow: none;
   }
-}
+} */
 
 /* @font-face {
   font-family: "Bitsumis";

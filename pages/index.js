@@ -18,10 +18,10 @@ export default function Home() {
       <section className="my-16 md:my-4" id="sponsor">
         <Collaborate />
       </section>
-      <section className="my-16 md:my-4" id="speaker">
+      <section className="" id="speaker">
         <SpeakerRegister />
       </section>
-      <section className="my-16 md:my-4" id="about">
+      <section className="" id="about">
         <FaqContainer />
       </section>
     </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SpeakerRegister = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center md:bg-gradient-bottom">
       <BgHeader bgHeader={"SPEAKER"} header={"BE A SPEAKER"} />
 
       <div className="grid md:grid-cols-2 gap-12 items-center flex-col md:-mt-20 md:w-5/6">

@@ -80,31 +80,23 @@ const FaqContainer = () => {
   return (
     <section
       id="Faq"
-      className="faq-section flex flex-col relative md:h-screen md:p-0 p-2"
+      className="faq-section md:h-screen flex flex-col items-center md:bg-gradient-top"
     >
-      <BgHeader header={"FAQS"} bgHeader={"QUERIES"} />
-      <div className="flex flex-row items-center justify-center md:p-8 p-0 mt-8 overflow-hidden md:-mt-32 gap-24">
-        <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-8 ml-6 md:ml-0">
-          <div className="flex flex-col items-center ">
-            <div className="w-full md:h-[40vh] h-[60vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
-              <div className="grid gap-6 mr-4">
-                {faqData.map((data, index) => {
-                  return faqTab(data.question, data.reply, data.links, index);
-                })}
+      <div className="flex flex-col md:w-5/6 mt-44">
+        <h2 className="font-secondary md:text-7xl text-3xl md:p-0 px-8">
+          Common Queries
+        </h2>
+        <div className="flex flex-row items-center justify-start md:mt-12 mt-8  overflow-hidden gap-24">
+          <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-0 ml-6 md:ml-0">
+            <div className="flex flex-col items-center ">
+              <div className="w-full md:h-[40vh] h-[60vh] overflow-y-scroll custom-scrollbar flex flex-col  ">
+                <div className="grid gap-6 mr-4">
+                  {faqData.map((data, index) => {
+                    return faqTab(data.question, data.reply, data.links, index);
+                  })}
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="image-container relative h-[515px] w-[515px] md:block hidden">
-          <Image
-            src="/faqBg.png"
-            width={515}
-            height={515}
-            alt=""
-            className="absolute top-0 -left-12 -z-[1]"
-          />
-          <div className=" h-fit">
-            <Image src="/faqImage.png" width={402} height={500} alt="" />
           </div>
         </div>
       </div>

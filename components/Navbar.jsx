@@ -22,6 +22,13 @@ const Path = (props) => (
   />
 );
 
+const navLinks = [
+  { title: "Career Conf", link: "/" },
+  { title: "Sponsors", link: "/" },
+  { title: "Speakers", link: "/" },
+  { title: "About", link: "/" },
+];
+
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -40,21 +47,14 @@ export default function App() {
 
         {/* Nav */}
         <ul className="flex flex-row gap-12 items-center">
-          <li className="text-white hover:text-primary">
-            <Link href="/">Career Conf</Link>
-          </li>
-          <li className="text-white hover:text-primary">
-            <Link href="/">Sponsor</Link>
-          </li>
-          <li className="text-white hover:text-primary">
-            <Link href="/">Speakers</Link>
-          </li>
-          <li className="text-white hover:text-primary">
-            <Link href="/">About</Link>
-          </li>
+          {navLinks.map(({ title, link, index }) => (
+            <li className="text-white hover:text-primary" key={index}>
+              <Link href={link}>{title}</Link>
+            </li>
+          ))}
           <li>
             <Link href="/register">
-              <button className="bg-primary text-white font-secondary px-4 py-2 rounded-md hover:bg-dark">
+              <button className="bg-primary text-white font-secondary px-4 py-2 rounded-md transition duration-300 hover:scale-105">
                 REGISTER
               </button>
             </Link>
@@ -126,29 +126,19 @@ export default function App() {
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
           className={`md:hidden block w-screen text-center flex flex-col gap-6 bg-dark text-white p-4 fixed top-12 right-0`}
         >
-          <Link href="/">
+          {navLinks.map(({ title, link, index }) => (
+            <Link href={link} key={index} onClick={() => setIsOpen(!isOpen)}>
+              <motion.li variants={itemVariants} className="hover:text-primary">
+                {title}
+              </motion.li>
+            </Link>
+          ))}
+          <Link href="/register">
             <motion.li variants={itemVariants} className="hover:text-primary">
-              Career Conf
-            </motion.li>
-          </Link>
-          <Link href="/">
-            <motion.li variants={itemVariants} className="hover:text-primary">
-              Sponsors
-            </motion.li>
-          </Link>
-          <Link href="/">
-            <motion.li variants={itemVariants} className="hover:text-primary">
-              Speakers
-            </motion.li>
-          </Link>
-          <Link href="/">
-            <motion.li variants={itemVariants} className="hover:text-primary">
-              About
-            </motion.li>
-          </Link>
-          <Link href="/">
-            <motion.li variants={itemVariants} className="hover:text-primary">
-              <button className="bg-primary text-white font-secondary px-4 py-2 rounded-md">
+              <button
+                className="bg-primary text-white font-secondary px-4 py-2 rounded-md hover:scale-115"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 REGISTER
               </button>
             </motion.li>

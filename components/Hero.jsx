@@ -6,12 +6,7 @@ import { FaMapLocationDot } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      className="h-[75vh] relative flex flex-col items-center md:h-[90vh] z-10 md:mt-0 mt-44"
-    >
+    <div className="relative flex flex-col items-center h-[90vh] z-10 md:mt-24">
       <div className="main-heading flex flex-col mx-auto justify-center">
         <div className="img-container relative h-[55vh]">
           <Image
@@ -22,7 +17,7 @@ const Hero = () => {
           ></Image>
           <div className="absolute bottom-0 w-full h-8 bg-gradient-to-t from-dark via-30% via-dark to-transparent md:block hidden"></div>
         </div>
-        <div className="header flex flex-col items-center justify-center md:text-[9vw] text-[12vw] tracking-wide	leading-none font-header md:-mt-12 -mt-28 z-10">
+        <div className="header flex flex-col items-center justify-center md:text-[9vw] text-[12vw] tracking-wide	leading-none font-header md:-mt-12 -mt-24 z-10">
           <div className="text-gradient bg-clip-text text-transparent bg-gradient-to-t from-dark via-60%  via-fade to-primary">
             CAREER CONF
           </div>
@@ -33,7 +28,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="scroll-to-move flex justify-center absolute bottom-8 text-2xl text-gray-500"
+        className="scroll-to-move flex justify-center absolute md:bottom-8 bottom-20 md:text-2xl text-xl text-gray-500"
         initial={{ y: 0 }} // Initial position
         animate={{
           y: [0, -15, 0],
@@ -60,7 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div> */}
-    </motion.div>
+    </div>
   );
 };
 

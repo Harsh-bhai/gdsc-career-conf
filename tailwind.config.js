@@ -16,7 +16,7 @@ module.exports = {
       fontFamily: {
         primary: ["var(--primary-font)"],
         secondary: ["var(--secondary-font)"],
-        garalama: ["var(--garalama-font)"],
+        header: ["var(--header-font)"],
       },
       fontWeight: {
         normal: "var(--font-normal)",
@@ -24,6 +24,7 @@ module.exports = {
       },
       colors: {
         primary: "var(--primary-color)",
+        fade: "var(--primary-fade-color)",
         background: "var(--background-color)",
         dark: "var(--dark-color)",
         light: "var(--light-color)",

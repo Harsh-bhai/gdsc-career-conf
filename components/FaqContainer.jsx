@@ -83,7 +83,7 @@ const FaqContainer = () => {
       className="faq-section md:h-screen flex flex-col items-center md:bg-gradient-top"
     >
       <div className="flex flex-col md:w-5/6 mt-44">
-        <h2 className="font-secondary md:text-7xl text-3xl md:p-0 px-8">
+        <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8">
           Common Queries
         </h2>
         <div className="flex flex-row items-center justify-start md:mt-12 mt-8  overflow-hidden gap-24">

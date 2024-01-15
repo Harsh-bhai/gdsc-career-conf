@@ -1,10 +1,6 @@
 import Link from "next/link";
 import BgHeader from "./BgHeader";
-import Image from "next/image";
-import sec2_arrow_comp from "./sec2_arrow_comp";
 const Collaborate = () => {
-
-
   return (
     <section className="flex flex-col items-center">
       <BgHeader header={"WHY COLLABORATE?"} bgHeader={"PARTNER"} />
@@ -53,7 +49,6 @@ const Collaborate = () => {
             className="object-cover rounded-lg"
           />
         </div> */}
-
       </div>
     </section>
   );

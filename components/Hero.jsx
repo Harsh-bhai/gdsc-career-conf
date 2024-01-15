@@ -1,12 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { FaCalendarAlt } from "react-icons/fa";
-import { FaMapLocationDot } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="relative flex flex-col items-center h-[90vh] z-10 md:mt-24">
+    <div className="relative flex flex-col items-center h-[90vh] z-10 mt-24">
       <div className="main-heading flex flex-col mx-auto justify-center">
         <div className="img-container relative h-[55vh]">
           <Image
@@ -28,7 +26,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="scroll-to-move flex justify-center absolute md:bottom-8 bottom-20 md:text-2xl text-xl text-gray-500"
+        className="scroll-to-move flex justify-center absolute md:bottom-8 bottom-44 md:text-2xl text-xl text-gray-500"
         initial={{ y: 0 }} // Initial position
         animate={{
           y: [0, -15, 0],

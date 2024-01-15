@@ -23,33 +23,43 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", link: "#careerconf" },
-  { title: "Sponsors", link: "#sponsor" },
-  { title: "Speakers", link: "#speaker" },
-  { title: "About", link: "#about" },
+  { title: "Career Conf", id: "careerconf" },
+  { title: "Sponsors", id: "sponsor" },
+  { title: "Speakers", id: "speaker" },
+  { title: "About", id: "about" },
 ];
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = (id) => {
+    console.log(id);
+  };
+
   return (
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="menu w-screen fixed md:mb-0 z-[1000]"
+      className="menu w-full fixed md:mb-0 z-[100] overflow-hidden"
     >
       <div className="md-nav md:flex md:flex-row gap-4 items-center bg-dark p-4 hidden px-20">
         {/* Logo */}
-        <Link href={"#hero"} className="flex flex-row  items-center mr-auto text-xl text-white font-secondary gap-2">
+        <Link
+          href={"/#hero"}
+          className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
+          onClick={() => handleLinkClick("hero")}
+        >
           <Image src="/logo 3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
         </Link>
 
         {/* Nav */}
         <ul className="flex flex-row gap-12 items-center">
-          {navLinks.map(({ title, link, index }) => (
+          {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
-              <Link href={link}>{title}</Link>
+              <Link href={`/#${id}`} onClick={handleLinkClick(id)}>
+                {title}
+              </Link>
             </li>
           ))}
           <li>
@@ -65,7 +75,7 @@ export default function App() {
       <div className="sm-nav w-screen md:hidden flex flex-row items-center bg-dark justify-between px-4">
         {/* Logo */}
         <div className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2">
-          <Image src="/logo 3.png" alt="" height={30 *2} width={40 *2} />
+          <Image src="/logo 3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
         </div>
 
@@ -126,8 +136,15 @@ export default function App() {
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
           className={`md:hidden block w-screen text-center flex flex-col gap-6 bg-dark text-white p-4 fixed top-12 right-0`}
         >
-          {navLinks.map(({ title, link, index }) => (
-            <Link href={link} key={index} onClick={() => setIsOpen(!isOpen)}>
+          {navLinks.map(({ title, id, index }) => (
+            <Link
+              href={`/#${id}`}
+              key={index}
+              onClick={() => {
+                setIsOpen(!isOpen);
+                handleLinkClick(id);
+              }}
+            >
               <motion.li variants={itemVariants} className="hover:text-primary">
                 {title}
               </motion.li>

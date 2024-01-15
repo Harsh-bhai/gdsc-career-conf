@@ -6,7 +6,20 @@ const Hero = () => {
   return (
     <div className="relative flex flex-col items-center h-[90vh] z-10 mt-24">
       <div className="main-heading flex flex-col mx-auto justify-center">
-        <div className="img-container relative h-[55vh]">
+        <motion.div
+          initial={{ y: 200, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            x: [0, -10, 0, -5, 10, 0],
+            rotate: [0, -5, 5, -2, 2, 0],
+          }}
+          transition={{
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          className="img-container relative h-[55vh]"
+        >
           <Image
             src={"/Conf-Owl.png"}
             alt="GDSC Conf"
@@ -14,7 +27,7 @@ const Hero = () => {
             objectFit="contain"
           ></Image>
           <div className="absolute bottom-0 w-full h-8 bg-gradient-to-t from-dark via-30% via-dark to-transparent md:block hidden"></div>
-        </div>
+        </motion.div>
         <div className="header flex flex-col items-center justify-center md:text-[9vw] text-[12vw] tracking-wide	leading-none font-header md:-mt-12 -mt-24 z-10">
           <div className="text-gradient bg-clip-text text-transparent bg-gradient-to-t from-dark via-60%  via-fade to-primary">
             CAREER CONF

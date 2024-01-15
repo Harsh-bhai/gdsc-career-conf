@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer
       id="Footer"
-      className="bg-dark text-light flex flex-col items-center"
+      className="bg-dark text-light flex flex-col items-center mt-24"
     >
       <div className="md:grid md:grid-cols-3 flex flex-col w-full md:p-12 md:py-12 py-8 px-4  border-y">
         <section className="flex-content w-full relative flex flex-col p-4 md:pl-24">

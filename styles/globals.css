@@ -10,7 +10,7 @@
 
   .bg-gradient-top {
     background: radial-gradient(
-      600px circle at 100% 20%,
+      600px circle at 100% 0%,
       var(--primary-color),
       #101111
     );
@@ -18,7 +18,7 @@
 
   .bg-gradient-bottom {
     background: radial-gradient(
-      600px circle at 100% 120%,
+      600px circle at 100% 100%,
       var(--primary-color),
       #101111
     );

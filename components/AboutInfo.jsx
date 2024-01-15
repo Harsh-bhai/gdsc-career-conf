@@ -9,8 +9,8 @@ const AboutInfo = () => {
     "Connect With Like Minded Individuals and Professionals",
   ];
   return (
-    <div className="flex flex-col w-5/6 items-end mx-auto" id="arrowList">
-      <div className="md:flex md:flex-col md:gap-8 hidden">
+    <div className="flex flex-col mx-auto" id="arrowList">
+      <div className="md:flex md:flex-col md:gap-16 hidden">
         {arrowinfo.map((item, index) => {
           return <ArrowList key={index} description={item} />;
         })}

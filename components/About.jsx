@@ -56,7 +56,7 @@ const About = () => {
 
   return (
     <>
-      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-20 z-20">
+      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-28 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-20 z-20">
         <motion.div
           ref={aboutRef}
           initial={{ x: "-100%", opacity: 0 }}
@@ -73,7 +73,7 @@ const About = () => {
             </p>
             <Link
               href={"/register"}
-              className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
+              className="font-secondary text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
             >
               REGISTRATION
             </Link>
@@ -84,7 +84,7 @@ const About = () => {
           initial={{ y: "100%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info justify-self-end"
+          className="about-info flex items-start"
         >
           <AboutInfo />
         </motion.div>

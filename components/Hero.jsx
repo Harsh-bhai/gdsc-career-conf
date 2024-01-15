@@ -1,23 +1,41 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 
 const Hero = () => {
+  const animationControls = useAnimation();
+
+  const animationVariants = {
+    initial: { y: 200, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      x: [0, -10, 0, -5, 10, 0],
+      rotate: [0, -5, 5, -2, 2, 0],
+    },
+  };
+
+  const handleHoverStart = async () => {
+    await animationControls.start("animate");
+  };
+
+  useEffect(() => {
+    // Trigger the animation when the component mounts
+    animationControls.start("animate");
+  }, [animationControls]);
+
   return (
     <div className="relative flex flex-col items-center h-[90vh] z-10 mt-24">
       <div className="main-heading flex flex-col mx-auto justify-center">
         <motion.div
-          initial={{ y: 200, opacity: 0 }}
-          animate={{
-            y: 0,
-            opacity: 1,
-            x: [0, -10, 0, -5, 10, 0],
-            rotate: [0, -5, 5, -2, 2, 0],
-          }}
+          variants={animationVariants}
+          initial="initial"
+          animate={animationControls}
           transition={{
             duration: 1,
             ease: "easeInOut",
           }}
+          onHoverStart={handleHoverStart}
           className="img-container relative h-[55vh]"
         >
           <Image

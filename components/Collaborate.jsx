@@ -1,6 +1,10 @@
 import Link from "next/link";
-import BgHeader from "./BgHeader";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+import { useInView } from "react-intersection-observer";
+
 const Collaborate = () => {
   const sponsorUs = [
     {
@@ -18,10 +22,69 @@ const Collaborate = () => {
     },
   ];
 
+  const [collaborateRef, collaborateInView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [sponsorUsRef, sponsorUsInView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [collaborateTransitioned, setCollaborateTransitioned] = useState(false);
+  const [sponsorUsTransitioned, setSponsorUsTransitioned] = useState(false);
+
+  const controlsCollaborate = useAnimation();
+  const controlsSponsorUs = useAnimation();
+
+  useEffect(() => {
+    if (collaborateInView && !collaborateTransitioned) {
+      controlsCollaborate.start({
+        x: 0,
+        opacity: 1,
+        transition: { type: "spring", duration: 1.5, bounce: 0.3 },
+      });
+      setCollaborateTransitioned(true);
+    }
+  }, [controlsCollaborate, collaborateInView, collaborateTransitioned]);
+
+  useEffect(() => {
+    if (sponsorUsInView && !sponsorUsTransitioned) {
+      // Add a delay to the right div animation
+      controlsSponsorUs.start({
+        x: 0,
+        opacity: 1,
+        transition: { type: "spring", duration: 1.5, bounce: 0.3, delay: 0.5 },
+      });
+      setSponsorUsTransitioned(true);
+    }
+  }, [controlsSponsorUs, sponsorUsInView, sponsorUsTransitioned]);
+
+  // Reset animations when scrolling back up
+  useEffect(() => {
+    if (!collaborateInView) {
+      controlsCollaborate.start({ x: "-100%", opacity: 0 });
+      setCollaborateTransitioned(false);
+    }
+  }, [controlsCollaborate, collaborateInView]);
+
+  useEffect(() => {
+    if (!sponsorUsInView) {
+      controlsSponsorUs.start({ x: "100%", opacity: 0 });
+      setSponsorUsTransitioned(false);
+    }
+  }, [controlsSponsorUs, sponsorUsInView]);
+
   return (
     <section className="flex flex-col items-center md:mt-40 my-20">
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-12 items-center md:-mt-20 md:w-5/6">
-        <div className="flex flex-col gap-12 text-base md:p-0 px-4 md:text-left text-center md:mx-auto w-full ">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-32 md:-mt-20 md:w-5/6">
+        <motion.div
+          ref={collaborateRef}
+          initial={{ x: "-100%", opacity: 0 }}
+          animate={controlsCollaborate}
+          transition={{ type: "spring", duration: 3, bounce: 0.3 }}
+          className="flex flex-col gap-12 text-base md:p-0 px-4 md:text-left text-center md:mx-auto w-full"
+        >
+          {" "}
           <h2 className="font-secondary md:text-[3.4vw] text-4xl md:p-0 px-8 self-start ">
             <span className="text-primary">Collaborate</span> With Us
           </h2>
@@ -52,12 +115,18 @@ const Collaborate = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="flex flex-row justify-center text-base md:p-0 px-4 md:text-left text-center md:mx-auto w-full ">
+        </motion.div>
+        <motion.div
+          ref={sponsorUsRef}
+          initial={{ x: "100%", opacity: 0 }}
+          animate={controlsSponsorUs}
+          transition={{ type: "spring", duration: 3, bounce: 0.3 }}
+          className="flex flex-row text-base md:p-0 px-4 md:ml-16 text-center w-full"
+        >
+          {" "}
           <div className="relative mt-4 md:h-[420px] h-[400px] md:w-20 w-32">
             <Image src="/collabInfo.png" fill={true} alt="Collab" />
           </div>
-
           <div className="flex flex-col md:gap-24 gap-12">
             {sponsorUs.map(({ title, description }) => {
               return (
@@ -68,7 +137,7 @@ const Collaborate = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -18,7 +18,7 @@ This could be your chance! We're seeking speakers from diverse domains such as U
               <Link
                 href={"https://forms.gle/Tc7iLKtAc3yMFiND8"}
                 target="_blank"
-                className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 rounded-md justify-self-start self-center text-white md:self-start duration-300 hover:scale-110 mt-8"
+                className="font-secondary text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 rounded-md justify-self-start self-center text-white md:self-start duration-300 hover:scale-110 mt-8"
               >
                 REGISTER SPEAKER
               </Link>

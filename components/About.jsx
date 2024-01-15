@@ -71,7 +71,7 @@ const About = () => {
           </p>
           <Link
             href={"/register"}
-            className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-black rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
+            className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-black rounded-md justify-self-start self-center hover:text-white md:self-start duration-300 hover:scale-110 mt-8"
           >
             REGISTRATION
           </Link>

@@ -49,7 +49,7 @@ export default function App() {
           className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
           onClick={() => handleLinkClick("hero")}
         >
-          <Image src="/logo 3.png" alt="" height={30 * 2} width={40 * 2} />
+          <Image src="/logo3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
         </Link>
 
@@ -75,7 +75,7 @@ export default function App() {
       <div className="sm-nav w-screen md:hidden flex flex-row items-center bg-dark justify-between px-4">
         {/* Logo */}
         <div className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2">
-          <Image src="/logo 3.png" alt="" height={30 * 2} width={40 * 2} />
+          <Image src="/logo3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
         </div>
 

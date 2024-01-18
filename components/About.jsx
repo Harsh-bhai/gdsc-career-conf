@@ -51,9 +51,9 @@ const About = () => {
           initial={{ x: "-100%", opacity: 0 }}
           animate={aboutControls}
           transition={{ type: "spring", duration: 3, bounce: 0.3 }}
-          className="flex flex-col items-center mx-auto gap-8"
+          className="flex flex-col items-center mx-auto md:gap-8 gap-4"
         >
-          <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8 self-start ">
+          <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 md:text-left text-center">
             What is Career<span className="text-primary">Conf</span>?
           </h2>
           <div className="flex flex-col">

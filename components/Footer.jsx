@@ -13,13 +13,6 @@ const footerLinks = [
 ];
 
 const Footer = () => {
-  function discordlink() {
-    // window.open("https://discord.gg/KnthBxzApR");
-  }
-  function sponsor_us() {
-    window.open("https://forms.gle/Tc7iLKtAc3yMFiND8");
-  }
-
   return (
     <footer
       id="footer"
@@ -73,7 +66,7 @@ const Footer = () => {
             </Link>
             <Link
               className="font-tertiary text-light my-2 mx-0 opacity-70"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/gdscbitd/"
               target="_blank"
               rel="noreferrer"
             >
@@ -84,7 +77,7 @@ const Footer = () => {
             </Link>
             <Link
               className="font-tertiary text-light my-2 mx-0 opacity-70"
-              href="https://www.linkedin.com/"
+              href="https://twitter.com/gdscbitd"
               target="_blank"
               rel="noreferrer"
             >

@@ -9,7 +9,7 @@ const SpeakerRegister = () => {
     >
       <div className="md:grid grid-cols-2 gap-12 items-center flex flex-col md:-mt-20 md:w-5/6 z-20">
         <section className="flex flex-col items-start text-base md:text-left text-center p-4 md:p-0 mx-auto">
-          <div className="flex flex-col gap-12 text-base md:p-0 md:text-left text-center md:mx-auto w-full ">
+          <div className="flex flex-col md:gap-8 gap-4 text-base md:p-0 md:text-left text-center md:mx-auto w-full ">
             <h2 className="font-secondary md:text-[3.4vw] text-4xl md:p-0 px-8 self-start ">
               Register as a <span className="text-primary">Speaker</span>!
             </h2>

@@ -83,10 +83,10 @@ const FaqContainer = () => {
       className="faq-section md:h-[70vh] h-screen flex flex-col items-center justify-center"
     >
       <div className="flex flex-col md:w-5/6">
-        <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8">
+        <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8 md:text-start text-center">
           Common Queries
         </h2>
-        <div className="flex flex-row items-center justify-start md:mt-12 mt-8  overflow-hidden gap-24">
+        <div className="flex flex-row items-center justify-start md:mt-12 mt-8  overflow-hidden gap-24 z-30">
           <div className="faqs-container flex flex-row flex-1 z-1 m-0 max-w-4xl md:p-0 ml-6 md:ml-0">
             <div className="flex flex-col items-center ">
               <div className="w-full md:h-[40vh] h-[60vh] overflow-y-scroll custom-scrollbar flex flex-col  ">

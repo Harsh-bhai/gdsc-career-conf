@@ -68,7 +68,7 @@ const Collaborate = () => {
         initial={{ x: "-100%", opacity: 0 }}
         animate={controlsCollaborate}
         transition={{ type: "spring", duration: 3, bounce: 0.3 }}
-        className="flex flex-col gap-12 text-base md:p-0 px-4 md:text-left text-center md:mx-auto"
+        className="flex flex-col md:gap-8 gap-4 text-base md:p-0 px-4 md:text-left text-center md:mx-auto"
       >
         {" "}
         <h2 className="font-secondary md:text-[3.4vw] text-4xl md:p-0 px-8 md:self-start ">

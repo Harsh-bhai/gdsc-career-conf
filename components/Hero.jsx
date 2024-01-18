@@ -82,7 +82,7 @@ const Hero = () => {
               style={{ color: "var(--primary-color)" }}
               className="md:text-3xl text-2xl"
             />
-            <span>04.02.2024</span>
+            <span>03.02.2024</span>
           </div>
         </div>
       </motion.div>

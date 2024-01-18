@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
+import { FaCalendar, FaMapLocationDot } from "react-icons/fa6";
 
 const Hero = () => {
   const animationControls = useAnimation();
@@ -25,7 +26,10 @@ const Hero = () => {
   }, [animationControls]);
 
   return (
-    <div className="relative flex flex-col items-center h-[90vh] z-10 mt-24">
+    <div
+      id="hero"
+      className="relative flex flex-col items-center h-[90vh] z-10 md:mt-20 mt-12"
+    >
       <div className="main-heading flex flex-col mx-auto justify-center">
         <motion.div
           variants={animationVariants}
@@ -57,14 +61,30 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="scroll-to-move flex justify-center absolute md:bottom-8 bottom-44 md:text-2xl text-xl text-gray-500"
-        initial={{ y: 0 }} // Initial position
-        animate={{
-          y: [0, -15, 0],
-          transition: { duration: 1, repeat: Infinity, repeatDelay: 1.5 },
-        }}
+        className="scroll-to-move flex justify-center absolute md:bottom-8 bottom-36 md:text-2xl text-xl text-gray-500"
+        // initial={{ y: 0 }} // Initial position
+        // animate={{
+        //   y: [0, -15, 0],
+        //   transition: { duration: 1, repeat: Infinity, repeatDelay: 1.5 },
+        // }}
       >
-        Scroll Down To Move
+        {/* Scroll Down To Move */}
+        <div className="info flex md:flex-row flex-col md:mt-0 gap-8 items-center justify-center md:text-3xl text-xl">
+          <div className="loc flex flex-row gap-4 items-center md:justify-center justify-between w-full">
+            <FaMapLocationDot
+              style={{ color: "var(--primary-color)" }}
+              className="text-3xl"
+            />
+            <span>BIT Durg</span>
+          </div>
+          <div className="date flex flex-row gap-4 items-center md:justify-center justify-between w-full">
+            <FaCalendar
+              style={{ color: "var(--primary-color)" }}
+              className="md:text-3xl text-2xl"
+            />
+            <span>04.02.2024</span>
+          </div>
+        </div>
       </motion.div>
 
       {/* Location and Venue */}

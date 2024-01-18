@@ -22,19 +22,19 @@ const Footer = () => {
 
   return (
     <footer
-      id="Footer"
+      id="footer"
       className="bg-dark text-light flex flex-col items-center mt-24"
     >
       <div className="md:grid md:grid-cols-3 flex flex-col w-full md:p-12 md:py-12 py-8 px-4  border-y">
         <section className="flex-content w-full relative flex flex-col p-4 md:pl-24">
-          <p className="text-white text-xl">CAREER CONF GDSC 2024</p>
+          <Image src="/logo3.png" alt="" height={30 * 3} width={40 * 3} />
           <p className="content-p font-tertiary opacity-60 mb-2">
             {`Uncover Untapped Tech Career Paths`}
           </p>
           <div className="btn-div font-secondary flex flex-col gap-2 max-w-[100vw] md:max-w-full">
             <Link
               href={"/register"}
-              className="btn register flex items-center justify-center bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-xl text-base md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 py-2"
+              className="btn register flex items-center justify-center bg-primary text-light rounded-lg hover:scale-105 transition ease-in duration-600 md:text-lg text-base md:w-[60%] w-full mr-[4%] mr-0 my-0.5 mx-0 py-2"
             >
               REGISTRATION
             </Link>

@@ -33,30 +33,19 @@ const About = () => {
   useEffect(() => {
     if (aboutTransitioned && aboutInfoInView) {
       aboutInfoControls.start({
-        y: 0,
+        y: "130%",
         opacity: 1,
         transition: { type: "spring", duration: 2, bounce: 0.3 },
       });
     }
   }, [aboutInfoControls, aboutInfoInView, aboutTransitioned]);
 
-  // Reset animations when scrolling back up
-  useEffect(() => {
-    if (!aboutInView) {
-      aboutControls.start({ x: "-100%", opacity: 0 });
-      setAboutTransitioned(false);
-    }
-  }, [aboutControls, aboutInView]);
-
-  useEffect(() => {
-    if (!aboutInfoInView) {
-      aboutInfoControls.start({ y: "100%", opacity: 0 });
-    }
-  }, [aboutInfoControls, aboutInfoInView]);
-
   return (
     <>
-      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-28 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-20 z-20">
+      <section
+        id="about"
+        className="w-screen relative md:h-[85vh] grid md:grid-cols-2 gap-28 items-start justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-64 z-20"
+      >
         <motion.div
           ref={aboutRef}
           initial={{ x: "-100%", opacity: 0 }}
@@ -69,26 +58,32 @@ const About = () => {
           </h2>
           <div className="flex flex-col">
             <p className="md:text-lg text-base md:leading-8 mt-5 md:text-left text-center">
-              {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - let's dive-in :)`}
+              {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - `}
+              <span className="text-primary font-secondary">
+                {" "}
+                lets dive-in {`:)`}
+              </span>
             </p>
             <Link
               href={"/register"}
               className="font-secondary text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
             >
-              REGISTRATION
+              REGISTER
             </Link>
           </div>
         </motion.div>
         <motion.div
           ref={aboutInfoRef}
-          initial={{ y: "100%", opacity: 0 }}
+          initial={{ y: "200%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info flex items-start"
+          className="about-info flex items-start md:-mt-4"
         >
           <AboutInfo />
         </motion.div>
       </section>
+
+      {/* bg asset */}
       <Image
         src={"/bg-asset.svg"}
         height={700}

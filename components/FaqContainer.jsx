@@ -79,8 +79,8 @@ const FaqContainer = () => {
 
   return (
     <section
-      id="Faq"
-      className="faq-section md:h-[70vh] h-screen flex flex-col items-center justify-center md:bg-gradient-top"
+      id="faq"
+      className="faq-section md:h-[70vh] h-screen flex flex-col items-center justify-center"
     >
       <div className="flex flex-col md:w-5/6">
         <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8">

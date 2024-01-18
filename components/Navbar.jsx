@@ -23,8 +23,8 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", id: "careerconf" },
-  { title: "Sponsors", id: "sponsor" },
+  { title: "Career Conf", id: "hero" },
+  { title: "Sponsors", id: "collab" },
   { title: "Speakers", id: "speaker" },
   { title: "About", id: "about" },
 ];

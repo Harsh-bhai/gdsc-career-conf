@@ -12,7 +12,7 @@ export default function Document() {
         <meta name="title" content="GSDC Career Conf" />
         <meta
           name="description"
-          content="GDSC CareerConf, a one-day conference hosted by Google Developers Student Clubs, BIT-D, is dedicated to broadening horizons within the tech industry for students. Our mission is to provide an understanding of diverse career opportunities in tech."
+          content="Uncovering Untapped career paths in tech. [3rd February 2024]"
         />
 
         <meta property="og:type" content="website" />
@@ -20,7 +20,7 @@ export default function Document() {
         <meta property="og:title" content="GSDC Career Conf" />
         <meta
           property="og:description"
-          content="GDSC CareerConf, a one-day conference hosted by Google Developers Student Clubs, BIT-D, is dedicated to broadening horizons within the tech industry for students. Our mission is to provide an understanding of diverse career opportunities in tech."
+          content="Uncovering Untapped career paths in tech. [3rd February 2024]"
         />
         <meta
           property="og:image"
@@ -35,7 +35,7 @@ export default function Document() {
         <meta property="twitter:title" content="GSDC Career Conf" />
         <meta
           property="twitter:description"
-          content="GDSC CareerConf, a one-day conference hosted by Google Developers Student Clubs, BIT-D, is dedicated to broadening horizons within the tech industry for students. Our mission is to provide an understanding of diverse career opportunities in tech."
+          content="Uncovering Untapped career paths in tech. [3rd February 2024]"
         />
         <meta
           property="twitter:image"

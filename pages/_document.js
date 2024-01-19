@@ -24,7 +24,7 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://gdsccareerconf.netlify.app/logo3.png"
+          content="https://gdsccareerconf.netlify.app/Logo_url.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -39,7 +39,7 @@ export default function Document() {
         />
         <meta
           property="twitter:image"
-          content="https://gdsccareerconf.netlify.app/logo3.png"
+          content="https://gdsccareerconf.netlify.app/Logo_url.png"
         />
       </Head>{" "}
       <body>

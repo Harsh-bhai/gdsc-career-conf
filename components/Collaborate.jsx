@@ -78,20 +78,19 @@ const Collaborate = () => {
           <div className="md:text-lg flex flex-col gap-4 text-base md:leading-8 mt-5 md:text-left text-center">
             <p>
               Invest - time, resources and energy at Career
-              <span className="text-primary font-secondary">Conf</span>. But
-              why?
+              <span className="font-secondary">Conf</span>. But why?
             </p>
             <p>
-              Career<span className="text-primary font-secondary">Conf</span> is
-              a one way solution to the uncertainty, dilemmas, and ignorance in
-              choosing career paths. Our core mission is to{" "}
-              <span className="text-primary font-secondary">illuminate</span>{" "}
-              the lesser-known avenues available to students, unveiling
-              refreshing paths they might not have considered. Embodying novelty
-              and <span className="text-primary font-secondary">passion</span>,
-              CareerConf is a platform that invites{" "}
-              <span className="text-primary font-secondary">collaboration</span>{" "}
-              to cherish the notion.
+              Career<span className="font-secondary">Conf</span> is a one way
+              solution to the uncertainty, dilemmas, and ignorance in choosing
+              career paths. Our core mission is to{" "}
+              <span className=" font-secondary">illuminate</span> the
+              lesser-known avenues available to students, unveiling refreshing
+              paths they might not have considered. Embodying novelty and{" "}
+              <span className="font-secondary">passion</span>, CareerConf is a
+              platform that invites{" "}
+              <span className="font-secondary">collaboration</span> to cherish
+              the notion.
             </p>
           </div>
           <div className="flex md:flex-row flex-col md:gap-12 gap-4 ">

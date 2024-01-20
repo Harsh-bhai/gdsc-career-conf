@@ -67,7 +67,7 @@ export default function App() {
         <ul className="flex flex-row gap-12 items-center">
           {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
-              <Link href={`/#${id}`} onClick={scrollToSection(id)}>
+              <Link href={`/`} onClick={scrollToSection(id)}>
                 {title}
               </Link>
             </li>

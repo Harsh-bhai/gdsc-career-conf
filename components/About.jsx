@@ -56,7 +56,7 @@ const About = () => {
 
   return (
     <>
-      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-20 z-20">
+      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 mt-20 z-20">
         <motion.div
           ref={aboutRef}
           initial={{ x: "-100%", opacity: 0 }}

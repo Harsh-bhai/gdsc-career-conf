@@ -8,12 +8,22 @@ import AboutInfo from "@/components/AboutInfo";
 export default function Home() {
   return (
     <div className="text-white relative overflow-hidden">
-      <Hero />
+      <section id="careerconf">
+        <Hero />
+      </section>
       <main className="relative">
-        <About />
-        <Collaborate />
-        <SpeakerRegister />
-        <FaqContainer />
+        <section id="about">
+          <About />
+        </section>
+        <section id="sponsor">
+          <Collaborate />
+        </section>
+        <section id="speaker">
+          <SpeakerRegister />
+        </section>
+        <section id="faq">
+          <FaqContainer />
+        </section>
       </main>
     </div>
   );

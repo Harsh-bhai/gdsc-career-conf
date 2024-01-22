@@ -5,7 +5,7 @@ const SpeakerRegister = () => {
   return (
     <div
       id="speaker"
-      className="flex justify-center relative items-center mt-20 md:mt-64 h-[60vh]"
+      className="flex justify-center relative items-center mt-20 md:mt-48 h-[60vh]"
     >
       <div className="md:grid grid-cols-2 gap-12 items-center flex flex-col md:-mt-20 md:w-5/6 z-20">
         <section className="flex flex-col items-start text-base md:text-left text-center p-4 md:p-0 mx-auto">

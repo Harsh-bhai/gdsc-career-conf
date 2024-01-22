@@ -10,9 +10,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        custom: "0 0 10px rgba(0, 0, 0, 0.5)",
+        // lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      },
       fontSize: {
-        'xxs': '0.5rem',  // You can adjust the size as needed
-        '3xs': '0.4rem',  // You can adjust the size as needed
+        xxs: "0.5rem", // You can adjust the size as needed
+        "3xs": "0.4rem", // You can adjust the size as needed
       },
       // screens: {
       //   md: { max: "1090px" },
@@ -34,7 +38,7 @@ module.exports = {
         light: "var(--light-color)",
       },
       boxShadow: {
-        'custom-purple': '0 1px 3px #5f24bf, 0 0 3px #5f24bf',
+        "custom-purple": "0 1px 3px #5f24bf, 0 0 3px #5f24bf",
       },
       zIndex: {
         tooltip: "var(--z-tooltip)",

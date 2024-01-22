@@ -1,5 +1,6 @@
 import React from "react";
 import ImageComponent from "@/components/imageComponent";
+import Image from "next/image";
 const Team = () => {
   const teamMembers = [
     {
@@ -9,8 +10,8 @@ const Team = () => {
     },
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
-      personName: "Member 2",
-      Type: "Marketing Team",
+      personName: "Vaibhav Shukla",
+      Type: "Web Team",
     },
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
@@ -54,10 +55,10 @@ const Team = () => {
     },
   ];
 
-  const sectionNames=["Core Team", "Organizers", "Volunteers"]
+  const sectionNames=[ "Organizers", "Core Team", "Volunteers"]
 
   return (
-    <div className="text-white  justify-center items-center mx-4 min-h-screen pt-20 ">
+    <div className="relative text-white  justify-center items-center  min-h-screen pt-20 ">
       <h1 className="mb-20  text-4xl text-center px-8  font-semibold md:text-6xl ">
         {" "}
         MEET OUR TEAM
@@ -79,6 +80,20 @@ const Team = () => {
       </section>
         )
       })}
+        <Image
+        src={"/bg-asset.svg"}
+        height={700}
+        width={500}
+        alt=""
+        className="-z-30 absolute left-0 top-0 rotate-180"
+      />
+        <Image
+        src={"/bg-asset.svg"}
+        height={700}
+        width={500}
+        alt=""
+        className="-z-30 absolute right-0 bottom-0 "
+      />
     </div>
   );
 };

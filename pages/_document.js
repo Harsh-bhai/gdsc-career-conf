@@ -8,7 +8,7 @@ export default function Document() {
           name="google-site-verification"
           content="bsRPIU_p6Ax7n_Qu44XpRptq2uAASJ5YLxn2OrDe2eM"
         />
-        <title>GSDC Career Conf</title>
+        <title>GDSC Career Conf</title>
         <meta name="title" content="GSDC Career Conf" />
         <meta
           name="description"

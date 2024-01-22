@@ -5,11 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = [
-  { title: "Home", link: "/" },
-  { title: "GDSC BITD", link: "/" },
-  { title: "CareerConf", link: "/" },
-  { title: "Sponsor", link: "/" },
-  { title: "About Us", link: "/" },
+  { title: "Home", link: "/#hero" },
+  { title: "Sponsors", link: "/#sponsors" },
+  { title: "Collaborate", link: "/#collab" },
+  { title: "Register", link: "/register" },
 ];
 
 const Footer = () => {

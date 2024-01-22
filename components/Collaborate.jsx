@@ -105,7 +105,7 @@ const Collaborate = () => {
             </Link>
             <Link
               href={
-                "https://drive.google.com/file/d/1gtBK18q7Z3ylgh9wy7R6gcHhKLZDCFHA/view"
+                "https://drive.google.com/file/d/19nUA6GX3Hi0O8o7M0v2-1vv5TezDs9av/view?usp=drivesdk"
               }
               target="_blank"
               className="font-secondary text-center md:text-lg w-64 bg-primary py-2 px-auto text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 md:mt-8"

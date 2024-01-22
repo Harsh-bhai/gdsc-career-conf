@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xxs': '0.5rem',  // You can adjust the size as needed
+        '3xs': '0.4rem',  // You can adjust the size as needed
+      },
       // screens: {
       //   md: { max: "1090px" },
       // },

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -23,10 +23,9 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", id: "about" },
-  { title: "Sponsors", id: "sponsor" },
-  { title: "Speakers", id: "speaker" },
-  { title: "About", id: "faq" },
+  { title: "Career Conf", id: "hero" },
+  { title: "Collaborate", id: "collab" },
+  { title: "About", id: "about" },
 ];
 
 export default function App() {
@@ -55,7 +54,7 @@ export default function App() {
       <div className="md-nav md:flex md:flex-row gap-4 items-center bg-dark p-4 hidden px-20">
         {/* Logo */}
         <Link
-          href={"/#hero"}
+          href={"/"}
           className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
           // onClick={() => scrollToSection("hero")}
         >

@@ -33,62 +33,57 @@ const About = () => {
   useEffect(() => {
     if (aboutTransitioned && aboutInfoInView) {
       aboutInfoControls.start({
-        y: 0,
+        y: "130%",
         opacity: 1,
         transition: { type: "spring", duration: 2, bounce: 0.3 },
       });
     }
   }, [aboutInfoControls, aboutInfoInView, aboutTransitioned]);
 
-  // Reset animations when scrolling back up
-  useEffect(() => {
-    if (!aboutInView) {
-      aboutControls.start({ x: "-100%", opacity: 0 });
-      setAboutTransitioned(false);
-    }
-  }, [aboutControls, aboutInView]);
-
-  useEffect(() => {
-    if (!aboutInfoInView) {
-      aboutInfoControls.start({ y: "100%", opacity: 0 });
-    }
-  }, [aboutInfoControls, aboutInfoInView]);
-
   return (
     <>
-      <section className="w-screen relative md:h-[60vh] grid md:grid-cols-2 gap-12 items-center justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 mt-20 z-20">
+      <section
+        id="about"
+        className="w-screen relative md:h-[85vh] grid md:grid-cols-2 gap-28 items-start justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-64 z-20"
+      >
         <motion.div
           ref={aboutRef}
           initial={{ x: "-100%", opacity: 0 }}
           animate={aboutControls}
           transition={{ type: "spring", duration: 3, bounce: 0.3 }}
-          className="flex flex-col items-center mx-auto gap-8"
+          className="flex flex-col items-center mx-auto md:gap-8 gap-4"
         >
-          <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 px-8 self-start ">
+          <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 md:text-left text-center">
             What is Career<span className="text-primary">Conf</span>?
           </h2>
           <div className="flex flex-col">
             <p className="md:text-lg text-base md:leading-8 mt-5 md:text-left text-center">
-              {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - let's dive-in :)`}
+              {`CareerConf is an amagus of ideas, passion, and troubled incantations over caffeinated 3AM chats. Troubled Incantations - what's that? It's the lack of perspective!! Our aim is to emulsify these gaps & channel your energy toward growth. Come aboard to discover what can't be seen, and fuel yourself to push boundaries, unleashing immense potential - `}
+              <span className="text-primary font-secondary">
+                {" "}
+                lets dive-in {`:)`}
+              </span>
             </p>
             <Link
               href={"/register"}
-              className="font-garalama text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
+              className="font-secondary text-center text-xl w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
             >
-              REGISTRATION
+              REGISTER
             </Link>
           </div>
         </motion.div>
         <motion.div
           ref={aboutInfoRef}
-          initial={{ y: "100%", opacity: 0 }}
+          initial={{ y: "200%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info justify-self-end"
+          className="about-info flex items-start md:-mt-4"
         >
           <AboutInfo />
         </motion.div>
       </section>
+
+      {/* bg asset */}
       <Image
         src={"/bg-asset.svg"}
         height={700}

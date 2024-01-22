@@ -3,31 +3,18 @@ import Hero from "@/components/Hero";
 import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
-import AboutInfo from "@/components/AboutInfo";
-import SponsorImg from "@/components/sponsorImg";
+import Sponsors from "@/components/Sponsors";
 
 export default function Home() {
   return (
     <div className="text-white relative overflow-hidden">
-      <section id="careerconf">
-        <Hero />
-      </section>
+      <Hero />
       <main className="relative">
-        <section id="about">
-          <About />
-        </section>
-        <section id="sponsorimg">
-          <SponsorImg />
-        </section>
-        <section id="sponsor">
-          <Collaborate />
-        </section>
-        <section id="speaker">
-          <SpeakerRegister />
-        </section>
-        <section id="faq">
-          <FaqContainer />
-        </section>
+        <About />
+        <Sponsors />
+        <Collaborate />
+        <SpeakerRegister />
+        <FaqContainer />
       </main>
     </div>
   );

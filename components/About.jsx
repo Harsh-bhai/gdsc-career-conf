@@ -44,7 +44,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="w-screen relative md:h-[85vh] grid md:grid-cols-2 gap-28 items-start justify-center px-4 md:w-5/6 mx-auto md:my-12 my-4 md:mt-64 z-20"
+        className="w-screen relative md:h-[95vh] grid md:grid-cols-2 gap-28 items-start justify-center px-4 md:w-5/6 mx-auto md:my-12 my-8 pt-2 md:mt-64 z-20"
       >
         <motion.div
           ref={aboutRef}

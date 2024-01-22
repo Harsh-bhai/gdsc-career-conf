@@ -25,8 +25,9 @@ const Path = (props) => (
 const navLinks = [
   { title: "Career Conf", id: "#hero" },
   { title: "Collaborate", id: "#collab" },
+  { title: "Sponsors", id: "#sponsors" },
   { title: "About", id: "#about" },
-  { title: "Team", id: "/team" },
+  // { title: "Team", id: "/team" },
 ];
 
 export default function App() {
@@ -67,8 +68,9 @@ export default function App() {
         <ul className="flex flex-row gap-12 items-center">
           {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
-              <Link href={`${id}`} 
-              // onClick={scrollToSection(id)}
+              <Link
+                href={`${id}`}
+                // onClick={scrollToSection(id)}
               >
                 {title}
               </Link>

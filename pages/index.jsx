@@ -4,7 +4,6 @@ import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
 import Sponsors from "@/components/Sponsors";
-import Team from "./team";
 
 export default function Home() {
   return (
@@ -12,11 +11,10 @@ export default function Home() {
       <Hero />
       <main className="relative">
         <About />
-        <Sponsors />
         <Collaborate />
+        <Sponsors />
         <SpeakerRegister />
         <FaqContainer />
-        <Team/>
       </main>
     </div>
   );

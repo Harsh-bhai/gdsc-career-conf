@@ -23,12 +23,24 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", id: "hero" },
-  { title: "Collaborate", id: "collab" },
-  { title: "About", id: "about" },
+  { title: "Career Conf", id: "#hero" },
+  { title: "Collaborate", id: "#collab" },
+  { title: "Sponsors", id: "#sponsors" },
+  { title: "About", id: "#about" },
+  // { title: "Team", id: "/team" },
 ];
 
 export default function App() {
+  // const scrollToSection = (sectionId) => {
+  //   if (typeof window !== 'undefined') {
+  //     const section = document.getElementById(sectionId);
+
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }
+  // };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = (id) => {
@@ -46,7 +58,7 @@ export default function App() {
         <Link
           href={"/"}
           className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
-          onClick={() => handleLinkClick("hero")}
+          // onClick={() => scrollToSection("hero")}
         >
           <Image src="/logo3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
@@ -56,7 +68,10 @@ export default function App() {
         <ul className="flex flex-row gap-12 items-center">
           {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
-              <Link href={`/#${id}`} onClick={handleLinkClick(id)}>
+              <Link
+                href={`${id}`}
+                // onClick={scrollToSection(id)}
+              >
                 {title}
               </Link>
             </li>

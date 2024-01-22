@@ -61,7 +61,7 @@ const Collaborate = () => {
   return (
     <section
       id="collab"
-      className="w-screen relative md:h-[80vh] grid md:grid-cols-2 grid-cols-1 md:gap-28 gap-8 items-start justify-center md:px-4 md:w-5/6 mx-auto md:my-12 my-4 z-20"
+      className="w-screen relative md:h-[90vh] grid md:grid-cols-2 grid-cols-1 md:gap-28 gap-8 items-start justify-center md:px-4 md:w-5/6 mx-auto md:my-12 my-4 z-20"
     >
       <motion.div
         ref={collaborateRef}

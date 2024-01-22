@@ -4,6 +4,7 @@ import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
 import AboutInfo from "@/components/AboutInfo";
+import SponsorImg from "@/components/sponsorImg";
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
       <main className="relative">
         <section id="about">
           <About />
+        </section>
+        <section id="sponsorimg">
+          <SponsorImg />
         </section>
         <section id="sponsor">
           <Collaborate />

@@ -30,15 +30,15 @@ const navLinks = [
 ];
 
 export default function App() {
-  const scrollToSection = (sectionId) => {
-    if (typeof window !== 'undefined') {
-      const section = document.getElementById(sectionId);
+  // const scrollToSection = (sectionId) => {
+  //   if (typeof window !== 'undefined') {
+  //     const section = document.getElementById(sectionId);
 
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
+  //     if (section) {
+  //       section.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }
+  // };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -57,7 +57,7 @@ export default function App() {
         <Link
           href={"/#hero"}
           className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
-          onClick={() => scrollToSection("hero")}
+          // onClick={() => scrollToSection("hero")}
         >
           <Image src="/logo3.png" alt="" height={30 * 2} width={40 * 2} />
           {/* GDSCBITD */}
@@ -67,7 +67,9 @@ export default function App() {
         <ul className="flex flex-row gap-12 items-center">
           {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
-              <Link href={`/`} onClick={scrollToSection(id)}>
+              <Link href={`/`} 
+              // onClick={scrollToSection(id)}
+              >
                 {title}
               </Link>
             </li>

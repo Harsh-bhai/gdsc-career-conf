@@ -29,6 +29,9 @@ module.exports = {
         dark: "var(--dark-color)",
         light: "var(--light-color)",
       },
+      boxShadow: {
+        'custom-purple': '0 1px 3px #5f24bf, 0 0 3px #5f24bf',
+      },
       zIndex: {
         tooltip: "var(--z-tooltip)",
         fixed: "var(--z-fixed)",

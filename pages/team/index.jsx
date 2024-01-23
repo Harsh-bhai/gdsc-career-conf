@@ -86,23 +86,38 @@ const Team = () => {
   const volunteers = [
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
-      personName: "Poorva Diwan",
-      Type: "Organizer",
+      personName: "Hardik Pawar",
+      Type: "Volunteer",
     },
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
-      personName: "Shashwat Gupta",
-      Type: "Organizer",
+      personName: "Anandita Singh",
+      Type: "Volunteer",
     },
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
-      personName: "Dhruv Adavadkar",
-      Type: "Organizer",
+      personName: "Dev Dewangan",
+      Type: "Volunteer",
     },
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
-      personName: "Vaibhav Shukla",
-      Type: "Organizer",
+      personName: "Rahul Dewangan",
+      Type: "Volunteer",
+    },
+    {
+      imgUrl: "r8xjoe-removebg-preview 1.png",
+      personName: "Nupoor Narayan",
+      Type: "Volunteer",
+    },
+    {
+      imgUrl: "r8xjoe-removebg-preview 1.png",
+      personName: "Tanisha Rathore",
+      Type: "Volunteer",
+    },
+    {
+      imgUrl: "r8xjoe-removebg-preview 1.png",
+      personName: "Apoorva Sinha",
+      Type: "Volunteer",
     },
   ];
 

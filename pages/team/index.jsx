@@ -3,6 +3,7 @@ import ImageComponent from "@/components/imageComponent";
 import Image from "next/image";
 import Sponsors from "@/components/Sponsors";
 const Team = () => {
+
   const organizer = [
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
@@ -25,6 +26,7 @@ const Team = () => {
       Type: "Organizer",
     },
   ];
+  
   const coreTeam = [
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
@@ -134,10 +136,11 @@ const Team = () => {
           {organizer.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={item.imgUrl || "https://via.placeholder.com/150x150/000000/000000.png"}
               personName={item.personName}
               Type={item.Type}
               size={"large"}
+              
             />
           ))}
         </div>
@@ -150,7 +153,7 @@ const Team = () => {
           {coreTeam.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={item.imgUrl  || "https://via.placeholder.com/150x150/000000/000000.png"}
               personName={item.personName}
               Type={item.Type}
             />
@@ -165,7 +168,7 @@ const Team = () => {
           {volunteers.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl}
+              imgUrl={item.imgUrl  || "https://via.placeholder.com/150x150/000000/000000.png"}
               personName={item.personName}
               Type={item.Type}
             />

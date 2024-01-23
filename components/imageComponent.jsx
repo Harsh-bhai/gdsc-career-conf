@@ -6,12 +6,15 @@ const ImageComponent = ({ imgUrl, personName, Type, size }) => {
     size === "large"
       ? "md:w-[18rem] w-[10rem] md:h-[18rem] h-[10rem]"
       : "md:w-[14rem] w-[10rem] md:h-[14rem] w-[10rem]";
-
+      const handleError = (e) => {
+        e.target.src = 'https://via.placeholder.com/150x150/000000/000000.png';
+    };
   return (
     <div className="relative">
       <img src="/stars.png" alt="" className="absolute inset-0 -z-10" />
       <img
         src={imgUrl}
+        onError={handleError}
         alt={personName}
         className={`${imageSize} object-cover rounded-md`}
       />

@@ -87,7 +87,7 @@ const Sponsors = () => {
               id={name.toLowerCase()}
               key={index}
             >
-              <img src={img} className="w-90" alt={name} srcset="" />
+              <Image src={img} width={1600} height={900} className="w-90" alt={name} srcset="" />
             </Link>
           ))}
         </div>

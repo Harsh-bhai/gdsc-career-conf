@@ -69,7 +69,7 @@ export default function App() {
           {navLinks.map(({ title, id, index }) => (
             <li className="text-white hover:text-primary" key={index}>
               <Link
-                href={`${id}`}
+                href={`/${id}`}
                 // onClick={scrollToSection(id)}
               >
                 {title}
@@ -152,7 +152,7 @@ export default function App() {
         >
           {navLinks.map(({ title, id, index }) => (
             <Link
-              href={`/#${id}`}
+              href={`/${id}`}
               key={index}
               onClick={() => {
                 setIsOpen(!isOpen);

@@ -5,9 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = [
-  { title: "Home", link: "/" },
-  // { title: "Sponsors", link: "/sponsors" },
-  { title: "Collaborators", link: "/collab" },
+  { title: "Home", link: "/#hero" },
+  { title: "Sponsors", link: "/#sponsors" },
+  { title: "Collaborate", link: "/#collab" },
   { title: "Register", link: "/register" },
 ];
 

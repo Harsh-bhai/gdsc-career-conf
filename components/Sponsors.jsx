@@ -43,13 +43,13 @@ const Sponsors = () => {
   return (
     <div
       id="sponsors"
-      className="w-screen md:mt-72 md:mb-0 my-28 px-4 md:w-5/6 mx-auto min-h-screen flex flex-col justify-center md:gap-20 gap-16"
+      className="w-screen md:mt-72 md:mb-0 my-28 px-4 md:w-5/6 mx-auto min-h-screen flex flex-col justify-center md:gap-20 gap-8"
     >
       <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0  text-center ">
         Meet our incredible Sponsors
       </h2>
       {/* title sponsor */}
-      <div className="main-sponsors flex flex-col justify-center mt-12">
+      <div className="main-sponsors flex flex-col justify-center md:mt-12 mt-4">
         <h3 className="font-secondary text-primary md:text-[2.5vw] text-2xl md:p-0 px-8 text-center ">
           Title Sponsors
         </h3>

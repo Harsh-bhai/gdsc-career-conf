@@ -61,7 +61,7 @@ const Collaborate = () => {
   return (
     <section
       id="collab"
-      className="w-screen relative md:h-[90vh] grid md:grid-cols-2 grid-cols-1 md:gap-28 gap-8 items-start justify-center md:px-4 md:w-5/6 mx-auto md:my-12 my-4 z-20"
+      className="w-screen relative md:h-screen grid md:grid-cols-2 grid-cols-1 md:gap-28 gap-8 items-start justify-center md:px-4 md:w-5/6 mx-auto md:my-12 my-4 z-20"
     >
       <motion.div
         ref={collaborateRef}
@@ -96,7 +96,7 @@ const Collaborate = () => {
           <div className="flex md:flex-row flex-col md:gap-12 gap-4 ">
             <Link
               href={
-                "https://drive.google.com/file/d/1CZMrp4d9Q4DX2wBCWQhr4UUyKeOQNMvH/view?usp=sharing"
+                "https://drive.google.com/file/d/1_76dC3TpvthdOciAjVMqh2QsvKv7yssC/view?usp=sharing"
               }
               target="_blank"
               className="font-secondary text-center md:text-lg w-64 bg-primary pt-2 pl-3 pb-2 pr-3 text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 mt-8"
@@ -105,7 +105,7 @@ const Collaborate = () => {
             </Link>
             <Link
               href={
-                "https://drive.google.com/file/d/1gtBK18q7Z3ylgh9wy7R6gcHhKLZDCFHA/view"
+                "https://drive.google.com/file/d/19nUA6GX3Hi0O8o7M0v2-1vv5TezDs9av/view?usp=drivesdk"
               }
               target="_blank"
               className="font-secondary text-center md:text-lg w-64 bg-primary py-2 px-auto text-white rounded-md justify-self-start self-center md:self-start duration-300 hover:scale-110 md:mt-8"

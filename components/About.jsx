@@ -33,7 +33,7 @@ const About = () => {
   useEffect(() => {
     if (aboutTransitioned && aboutInfoInView) {
       aboutInfoControls.start({
-        y: "130%",
+        y: "110%",
         opacity: 1,
         transition: { type: "spring", duration: 2, bounce: 0.3 },
       });
@@ -77,9 +77,10 @@ const About = () => {
           initial={{ y: "200%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info flex items-start md:-mt-4"
+          className="about-info flex items-start md:-mb-[2vw]"
         >
-          <AboutInfo />
+          {/* <AboutInfo /> */}
+          <Image src={"/AboutAsset.png"} width={500} height={500} alt="" />
         </motion.div>
       </section>
 

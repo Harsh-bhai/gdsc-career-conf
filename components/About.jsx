@@ -80,18 +80,18 @@ const About = () => {
           className="about-info flex items-start md:-mb-[2vw]"
         >
           {/* <AboutInfo /> */}
-          <Image src={"/AboutAsset.png"} width={500} height={500} alt="" />
+          <Image src={"/AboutAsset.png"} width={500} height={500} alt="" className="-translate-y-80 md:translate-y-0"/>
         </motion.div>
       </section>
 
       {/* bg asset */}
-      <Image
+      {/* <Image
         src={"/bg-asset.svg"}
         height={700}
         width={500}
         alt=""
         className="absolute left-0 top-0 rotate-180"
-      />
+      /> */}
     </>
   );
 };

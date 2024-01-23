@@ -33,11 +33,16 @@ const Sponsors = () => {
       img: "/CodingNinja.png",
       href: "https://www.codingninjas.com/",
     },
-    // {
-    //   name: "GDSC BIT Raipur",
-    //   img: "/GDSC_BITR.png",
-    //   href: "https://www.codingninja.com/",
-    // },
+    {
+      name: "GDSC BIT Raipur",
+      img: "/GDSC_Bhilai_Institute_Of_Technology_Raipur__Vertical_color__1_-removebg-preview.png",
+      href: "https://gdsc.community.dev/bhilai-institute-of-technology-raipur/",
+    },
+    {
+      name: "GDSC AMITY Raipur",
+      img: "/gdsc amity raipur.png",
+      href: "https://gdsc.community.dev/amity-university-chhattisgarh/",
+    },
   ];
 
   return (

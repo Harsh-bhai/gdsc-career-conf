@@ -35,12 +35,12 @@ const Sponsors = () => {
     },
     {
       name: "GDSC BIT Raipur",
-      img: "/GDSC_Bhilai_Institute_Of_Technology_Raipur__Vertical_color__1_-removebg-preview.png",
+      img: "/bitraipur.png",
       href: "https://gdsc.community.dev/bhilai-institute-of-technology-raipur/",
     },
     {
       name: "GDSC AMITY Raipur",
-      img: "/gdsc amity raipur.png",
+      img: "/gdscamityraipur.png",
       href: "https://gdsc.community.dev/amity-university-chhattisgarh/",
     },
   ];
@@ -78,7 +78,7 @@ const Sponsors = () => {
         <h3 className="font-secondary text-primary md:text-[2.5vw] text-2xl md:p-0 px-8 text-center ">
           Community Partners
         </h3>
-        <div className="s-row grid grid-cols-1 md:grid-cols-4 w-4/5 mx-auto md:my-[4rem] my-[2.5rem]">
+        <div className="s-row grid grid-cols-1 md:grid-cols-3 w-4/5 mx-auto md:my-[4rem] my-[2.5rem]">
           {partners.map(({ name, img, href, index }) => (
             <Link
               target="blank"

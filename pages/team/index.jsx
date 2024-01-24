@@ -3,10 +3,9 @@ import ImageComponent from "@/components/imageComponent";
 import Image from "next/image";
 import Sponsors from "@/components/Sponsors";
 const Team = () => {
-
   const organizer = [
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "poorva.png",
       personName: "Poorva Diwan",
       Type: "Organizer",
     },
@@ -16,17 +15,17 @@ const Team = () => {
       Type: "Organizer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "dhruv.png",
       personName: "Dhruv Adavadkar",
       Type: "Organizer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "vaibhav.png",
       personName: "Vaibhav Shukla",
       Type: "Organizer",
     },
   ];
-  
+
   const coreTeam = [
     {
       imgUrl: "r8xjoe-removebg-preview 1.png",
@@ -136,11 +135,10 @@ const Team = () => {
           {organizer.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl || "https://via.placeholder.com/150x150/000000/000000.png"}
+              imgUrl={item.imgUrl !== "" ? item.imgUrl : "/bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
               size={"large"}
-              
             />
           ))}
         </div>
@@ -153,14 +151,17 @@ const Team = () => {
           {coreTeam.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl  || "https://via.placeholder.com/150x150/000000/000000.png"}
+              imgUrl={
+                item.imgUrl ||
+                "https://via.placeholder.com/150x150/000000/000000.png"
+              }
               personName={item.personName}
               Type={item.Type}
             />
           ))}
         </div>
       </div>
-      <div className="mt-24 mt-12 md:w-[95%]">
+      <div className="mt-24 mt-12 md:w-[90%]">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Volunteers
         </h1>
@@ -168,7 +169,10 @@ const Team = () => {
           {volunteers.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl  || "https://via.placeholder.com/150x150/000000/000000.png"}
+              imgUrl={
+                item.imgUrl ||
+                "https://via.placeholder.com/150x150/000000/000000.png"
+              }
               personName={item.personName}
               Type={item.Type}
             />

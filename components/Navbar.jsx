@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter, usePathname } from "next/navigation";
 
 const itemVariants = {
   open: {
@@ -23,29 +24,49 @@ const Path = (props) => (
 );
 
 const navLinks = [
-  { title: "Career Conf", id: "#hero" },
-  { title: "Collaborate", id: "#collab" },
-  { title: "Sponsors", id: "#sponsors" },
-  { title: "About", id: "#about" },
-  // { title: "Team", id: "/team" },
+  { title: "Career Conf", id: "hero", link: "/#hero" },
+  { title: "About", id: "about", link: "/#about" },
+  { title: "Collaborate", id: "collab", link: "/#collab" },
+  { title: "Sponsors", id: "sponsors", link: "/#sponsor" },
+  { title: "Team", id: null, link: "/team" },
 ];
 
-export default function App() {
-  // const scrollToSection = (sectionId) => {
-  //   if (typeof window !== 'undefined') {
-  //     const section = document.getElementById(sectionId);
+export default function Navbar() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [clickedId, setClickedId] = useState(null);
 
-  //     if (section) {
-  //       section.scrollIntoView({ behavior: 'smooth' });
-  //     }
-  //   }
-  // };
+  const scrollToSection = (sectionId) => {
+    if (typeof window !== "undefined") {
+      const section = document?.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+    }
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
   const handleLinkClick = (id) => {
-    console.log(id);
+    setClickedId(id);
+    if (pathname !== "/") {
+      router.push("/");
+    } else {
+      scrollToSection(id);
+    }
   };
+
+  // Effect to scroll to section when on home page
+  useEffect(() => {
+    if (pathname === "/") {
+      console.log(clickedId);
+      scrollToSection(clickedId);
+    }
+  }, [pathname, clickedId]);
 
   return (
     <motion.nav
@@ -58,24 +79,32 @@ export default function App() {
         <Link
           href={"/"}
           className="flex flex-row items-center mr-auto text-xl text-white font-secondary gap-2"
-          // onClick={() => scrollToSection("hero")}
+          onClick={() => handleLinkClick("hero")}
         >
           <Image src="/logo3.png" alt="" height={30 * 2} width={40 * 2} />
-          {/* GDSCBITD */}
         </Link>
 
         {/* Nav */}
         <ul className="flex flex-row gap-12 items-center">
-          {navLinks.map(({ title, id, index }) => (
-            <li className="text-white hover:text-primary" key={index}>
-              <Link
-                href={`/${id}`}
-                // onClick={scrollToSection(id)}
+          {navLinks.map(({ title, id, link, index }) =>
+            id ? (
+              <li
+                className="text-white hover:text-primary cursor-pointer"
+                key={index}
+                onClick={() => {
+                  handleLinkClick(id);
+                }}
               >
                 {title}
-              </Link>
-            </li>
-          ))}
+              </li>
+            ) : (
+              <li className="text-white hover:text-primary" key={index}>
+                <Link href={link} onClick={() => scrollToSection(id)}>
+                  {title}
+                </Link>
+              </li>
+            )
+          )}
           <li>
             <Link href="/register">
               <button className="bg-primary text-white font-secondary px-4 py-2 rounded-md transition duration-300 hover:scale-105">
@@ -150,20 +179,40 @@ export default function App() {
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
           className={`md:hidden block w-screen text-center flex flex-col gap-6 bg-dark text-white p-4 fixed top-12 right-0`}
         >
-          {navLinks.map(({ title, id, index }) => (
-            <Link
-              href={`/${id}`}
-              key={index}
-              onClick={() => {
-                setIsOpen(!isOpen);
-                handleLinkClick(id);
-              }}
-            >
-              <motion.li variants={itemVariants} className="hover:text-primary">
-                {title}
-              </motion.li>
-            </Link>
-          ))}
+          {navLinks.map(({ title, id, link, index }) =>
+            id ? (
+              <span
+                key={index}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  handleLinkClick(id);
+                }}
+              >
+                <motion.li
+                  variants={itemVariants}
+                  className="hover:text-primary"
+                >
+                  {title}
+                </motion.li>
+              </span>
+            ) : (
+              <Link
+                href={link}
+                key={index}
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                  scrollToSection(id);
+                }}
+              >
+                <motion.li
+                  variants={itemVariants}
+                  className="hover:text-primary"
+                >
+                  {title}
+                </motion.li>
+              </Link>
+            )
+          )}
           <Link href="/register">
             <motion.li variants={itemVariants} className="hover:text-primary">
               <button

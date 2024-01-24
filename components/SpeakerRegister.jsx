@@ -35,7 +35,7 @@ const SpeakerRegister = () => {
         height={700}
         width={500}
         alt=""
-        className="absolute right-0 top-1/4 z-10"
+        className="absolute right-0 top-[10%] z-10"
       />
     </div>
   );

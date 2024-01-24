@@ -120,12 +120,12 @@ const Collaborate = () => {
         initial={{ y: "200%", opacity: 0 }}
         animate={controlsSponsorUs}
         transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-        className="md:flex hidden flex-row text-base md:p-0 pt-30 px-4 md:ml-16 text-center w-full"
+        className="md:flex hidden flex-row text-base md:p-0 pt-30 px-4 md:ml-16 text-center w-full md:mb-8"
       >
         <div className="relative mt-4 md:h-[420px] h-[400px] md:w-20 w-32">
           <Image src="/collabInfo.png" fill={true} alt="Collab" />
         </div>
-        <div className="flex flex-col md:gap-24 gap-12">
+        <div className="flex flex-col md:gap-24 gap-12 ">
           {sponsorUs.map(({ title, description }) => {
             return (
               <div key={title} className="flex flex-col ml-10 ">

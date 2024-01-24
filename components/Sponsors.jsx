@@ -33,17 +33,23 @@ const Sponsors = () => {
       img: "/CodingNinja.png",
       href: "https://www.codingninjas.com/",
     },
-    // {
-    //   name: "GDSC BIT Raipur",
-    //   img: "/GDSC_BITR.png",
-    //   href: "https://www.codingninja.com/",
-    // },
+    {
+      name: "GDSC BIT Raipur",
+      img: "/bitraipur.png",
+      href: "https://gdsc.community.dev/bhilai-institute-of-technology-raipur/",
+    },
+    {
+      name: "GDSC AMITY Raipur",
+      img: "/gdscamityraipur.png",
+      href: "https://gdsc.community.dev/amity-university-chhattisgarh/",
+    },
   ];
 
   return (
     <div
       id="sponsors"
-      className="w-screen md:mt-72 md:mb-0 my-28 px-4 md:w-5/6 mx-auto min-h-screen flex flex-col justify-center md:gap-20 gap-8"
+      className="w-screen md:mt-80
+       md:mb-0 my-28 px-4 md:w-5/6 mx-auto min-h-screen flex flex-col justify-center md:gap-20 gap-8"
     >
       <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0  text-center ">
         Meet our incredible Sponsors
@@ -72,7 +78,7 @@ const Sponsors = () => {
         <h3 className="font-secondary text-primary md:text-[2.5vw] text-2xl md:p-0 px-8 text-center ">
           Community Partners
         </h3>
-        <div className="s-row grid grid-cols-1 md:grid-cols-4 w-4/5 mx-auto md:my-[4rem] my-[2.5rem]">
+        <div className="s-row grid grid-cols-1 md:grid-cols-3 w-4/5 mx-auto md:my-[4rem] my-[2.5rem]">
           {partners.map(({ name, img, href, index }) => (
             <Link
               target="blank"
@@ -81,7 +87,7 @@ const Sponsors = () => {
               id={name.toLowerCase()}
               key={index}
             >
-              <img src={img} className="w-90" alt={name} srcset="" />
+              <Image src={img} width={1600} height={900} className="w-90" alt={name} srcset="" />
             </Link>
           ))}
         </div>

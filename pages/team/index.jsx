@@ -10,7 +10,7 @@ const Team = () => {
       Type: "Organizer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "shashwat.png",
       personName: "Shashwat Gupta",
       Type: "Organizer",
     },
@@ -28,57 +28,57 @@ const Team = () => {
 
   const coreTeam = [
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Shashank Yadav",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Shruti Pandey",
       Type: "Web Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Aditi Sharma",
       Type: "Marketing Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Harsh Dewangan",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Risabh Gupta",
       Type: "Marketing Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Shreya Badgaiyan",
       Type: "Marketing Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Prapti Sanghi",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Tanu Shree",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Priyansh Gupta",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Ansh Joseph",
       Type: "Design Team",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Priyansh Gupta",
       Type: "Design Team",
     },
@@ -86,37 +86,37 @@ const Team = () => {
 
   const volunteers = [
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Hardik Pawar",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Anandita Singh",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Dev Dewangan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Rahul Dewangan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Nupoor Narayan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Tanisha Rathore",
       Type: "Volunteer",
     },
     {
-      imgUrl: "r8xjoe-removebg-preview 1.png",
+      imgUrl: "",
       personName: "Apoorva Sinha",
       Type: "Volunteer",
     },
@@ -135,7 +135,7 @@ const Team = () => {
           {organizer.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={item.imgUrl !== "" ? item.imgUrl : "/bg-placeholder.png"}
+              imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
               size={"large"}
@@ -151,10 +151,7 @@ const Team = () => {
           {coreTeam.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={
-                item.imgUrl ||
-                "https://via.placeholder.com/150x150/000000/000000.png"
-              }
+              imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
             />
@@ -169,10 +166,7 @@ const Team = () => {
           {volunteers.map((item, index) => (
             <ImageComponent
               key={index}
-              imgUrl={
-                item.imgUrl ||
-                "https://via.placeholder.com/150x150/000000/000000.png"
-              }
+              imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
             />

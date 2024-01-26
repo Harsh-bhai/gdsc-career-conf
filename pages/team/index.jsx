@@ -91,7 +91,7 @@ const Team = () => {
       Type: "Volunteer",
     },
     {
-      imgUrl: "Anandita .png",
+      imgUrl: "Anandita.png",
       personName: "Anandita Singh",
       Type: "Volunteer",
     },
@@ -122,6 +122,16 @@ const Team = () => {
     },
   ];
 
+  const advisors = [
+    {
+      personName: "Chaitali Choudhary",
+      imgUrl:
+        "https://res.cloudinary.com/dlu9czr7j/image/upload/v1694106528/opinhacks/chaitali_bba1ov.svg",
+      LinkedlnUrl: "https://www.linkedin.com/in/chaitali-choudhary-8402b925/",
+      Type: "Advisor",
+    },
+  ];
+
   return (
     <div className="relative text-white flex flex-col items-center min-h-screen md:pt-36 pt-24">
       <h1 className="text-4xl text-center px-8  font-semibold md:text-6xl ">
@@ -133,6 +143,22 @@ const Team = () => {
         </h1>
         <div className="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-24 gap-4 mt-10">
           {organizer.map((item, index) => (
+            <ImageComponent
+              key={index}
+              imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
+              personName={item.personName}
+              Type={item.Type}
+              size={"large"}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="mt-12">
+        <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
+          Advisors
+        </h1>
+        <div className="grid justify-center md:gap-24 gap-4 mt-10">
+          {advisors.map((item, index) => (
             <ImageComponent
               key={index}
               imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}

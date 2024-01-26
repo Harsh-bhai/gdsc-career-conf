@@ -28,12 +28,12 @@ const Team = () => {
 
   const coreTeam = [
     {
-      imgUrl: "",
+      imgUrl: "Shashank.png",
       personName: "Shashank Yadav",
       Type: "Design Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Shruti pandey.png",
       personName: "Shruti Pandey",
       Type: "Web Team",
     },
@@ -43,32 +43,32 @@ const Team = () => {
       Type: "Marketing Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Harsh Dewangan.png",
       personName: "Harsh Dewangan",
       Type: "Design Team",
     },
     {
-      imgUrl: "",
-      personName: "Risabh Gupta",
+      imgUrl: "Rishabh Singh.png",
+      personName: "Rishabh Singh",
       Type: "Marketing Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Shreya badgaiyan.png",
       personName: "Shreya Badgaiyan",
       Type: "Marketing Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Prapti Sanghi.png",
       personName: "Prapti Sanghi",
       Type: "Design Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Tanu Shree.png",
       personName: "Tanu Shree",
       Type: "Design Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "Priyansh Gupta.png",
       personName: "Priyansh Gupta",
       Type: "Design Team",
     },
@@ -86,37 +86,37 @@ const Team = () => {
 
   const volunteers = [
     {
-      imgUrl: "",
+      imgUrl: "Hardik Pawar.png",
       personName: "Hardik Pawar",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Anandita .png",
       personName: "Anandita Singh",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Dev Dewangan.png",
       personName: "Dev Dewangan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Rahul Dewangan.png",
       personName: "Rahul Dewangan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Nupoor.png",
       personName: "Nupoor Narayan",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Tanisha Rathore.png",
       personName: "Tanisha Rathore",
       Type: "Volunteer",
     },
     {
-      imgUrl: "",
+      imgUrl: "Apoorva Sinha.png",
       personName: "Apoorva Sinha",
       Type: "Volunteer",
     },

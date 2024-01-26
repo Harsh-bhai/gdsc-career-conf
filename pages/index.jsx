@@ -6,6 +6,7 @@ import SpeakerRegister from "@/components/SpeakerRegister";
 import Sponsors from "@/components/Sponsors";
 
 
+
 export default function Home() {
   return (
     <div className="text-white relative overflow-hidden">

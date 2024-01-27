@@ -1,28 +1,33 @@
 import React from "react";
 import ImageComponent from "@/components/imageComponent";
 import Image from "next/image";
-import Sponsors from "@/components/Sponsors";
 const Team = () => {
   const organizer = [
     {
       imgUrl: "poorva.png",
       personName: "Poorva Diwan",
       Type: "Organizer",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/poorva-diwan-a019971a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "shashwat.png",
       personName: "Shashwat Gupta",
       Type: "Organizer",
+      LinkedInUrl: "https://www.linkedin.com/in/shashwhatt/",
     },
     {
       imgUrl: "dhruv.png",
       personName: "Dhruv Adavadkar",
       Type: "Organizer",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/dhruv-adavadkar-0aa626226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "vaibhav.png",
       personName: "Vaibhav Shukla",
       Type: "Organizer",
+      LinkedInUrl: "https://www.linkedin.com/in/vaibhav-shukla-319045210/",
     },
   ];
 
@@ -31,61 +36,78 @@ const Team = () => {
       imgUrl: "shashank.png",
       personName: "Shashank Yadav",
       Type: "Core Team",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/shashank-yadav-36b360239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "shrutipandey.png",
       personName: "Shruti Pandey",
       Type: "Core Team",
+      LinkedInUrl: "",
     },
     {
       imgUrl: "aditi.png",
       personName: "Aditi Sharma",
       Type: "Core Team",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/aditi-sharma-622393238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "Harsh Dewangan.png",
       personName: "Harsh Dewangan",
       Type: "Core Team",
+      LinkedInUrl: "https://www.linkedin.com/in/harsh-dewangan-3a44b5232/",
     },
     {
       imgUrl: "Rishabh Singh.png",
       personName: "Rishabh Singh",
       Type: "Core Team",
+      LinkedInUrl: "https://www.linkedin.com/in/singhrishabh1670",
     },
     {
       imgUrl: "shreya.png",
       personName: "Shreya Badgaiyan",
       Type: "Core Team",
+      LinkedInUrl: "",
     },
     {
       imgUrl: "Prapti Sanghi.png",
       personName: "Prapti Sanghi",
       Type: "Core Team",
+      LinkedInUrl: "",
     },
     {
       imgUrl: "Tanu Shree.png",
       personName: "Tanu Shree",
       Type: "Core Team",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/tanu-shree-95525b255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "Priyansh Gupta.png",
       personName: "Priyansh Gupta",
       Type: "Core Team",
+      LinkedInUrl: "https://www.linkedin.com/in/priyanshg02",
     },
     {
       imgUrl: "nalini.png",
       personName: "Nalini Ajwani",
       Type: "Core Team",
+      LinkedInUrl: "https://www.linkedin.com/in/nalini-ajwani/",
     },
     {
       imgUrl: "kavya.png",
       personName: "Kavya Swarnkar",
       Type: "Core Team",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/kavya-swarnkar-a2b55924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     },
     {
       imgUrl: "ansh.png",
       personName: "Ansh Joseph",
       Type: "Core Team",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/anshjoseph?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
 
@@ -94,41 +116,51 @@ const Team = () => {
       imgUrl: "Hardik Pawar.png",
       personName: "Hardik Pawar",
       Type: "Volunteer",
+      LinkedInUrl: "https://www.linkedin.com/in/hardik-pawar-971616250",
     },
     {
       imgUrl: "kritika.png",
       personName: "G Kirtika",
       Type: "Volunteer",
+      LinkedInUrl: "",
     },
     {
       imgUrl: "Apoorva Sinha.png",
       personName: "Apoorva Sinha",
       Type: "Volunteer",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/apoorva-sinha-84bb01272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "Dev Dewangan.png",
       personName: "Dev Dewangan",
       Type: "Volunteer",
+      LinkedInUrl: "https://www.linkedin.com/in/dev-dewangan-788b75281",
     },
     {
       imgUrl: "Rahul Dewangan.png",
       personName: "Rahul Dewangan",
       Type: "Volunteer",
+      LinkedInUrl:
+        "https://www.linkedin.com/in/rahul-dewangan-72323a256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
     {
       imgUrl: "Anandita.png",
       personName: "Anandita Singh",
       Type: "Volunteer",
+      LinkedInUrl: "https://in.linkedin.com/in/anandita-singh-21736b272",
     },
     {
       imgUrl: "Nupoor.png",
       personName: "Nupoor Narayan",
       Type: "Volunteer",
+      LinkedInUrl: "",
     },
     {
       imgUrl: "Tanisha Rathore.png",
       personName: "Tanisha Rathore",
       Type: "Volunteer",
+      LinkedInUrl: "https://www.linkedin.com/in/tanisha-19-rathore",
     },
   ];
 
@@ -136,7 +168,7 @@ const Team = () => {
     {
       personName: "Chaitali Choudhary",
       imgUrl: "chaitali.png",
-      LinkedlnUrl: "https://www.linkedin.com/in/chaitali-choudhary-8402b925/",
+      LinkedInUrl: "https://www.linkedin.com/in/chaitali-choudhary-8402b925/",
       Type: "Advisor",
     },
   ];
@@ -156,6 +188,7 @@ const Team = () => {
               personName={item.personName}
               Type={item.Type}
               size={"large"}
+              LinkedInUrl={item.LinkedInUrl}
             />
           ))}
         </div>
@@ -173,6 +206,7 @@ const Team = () => {
               personName={item.personName}
               Type={item.Type}
               size={"large"}
+              LinkedInUrl={item.LinkedInUrl}
             />
           ))}
         </div>
@@ -189,6 +223,7 @@ const Team = () => {
               imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
+              LinkedInUrl={item.LinkedInUrl}
             />
           ))}
         </div>
@@ -205,6 +240,7 @@ const Team = () => {
               imgUrl={item.imgUrl !== "" ? item.imgUrl : "bg-placeholder.png"}
               personName={item.personName}
               Type={item.Type}
+              LinkedInUrl={item.LinkedInUrl}
             />
           ))}
         </div>

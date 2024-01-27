@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 // components/ImageComponent.js
 
-const ImageComponent = ({ imgUrl, personName, Type, size }) => {
+import Link from "next/link";
+
+const ImageComponent = ({ imgUrl, personName, Type, size, LinkedInUrl }) => {
   const imageSize =
     size === "large"
       ? "md:w-[16vw] w-[10rem] md:h-[16vw] h-[10rem]"
@@ -10,7 +12,11 @@ const ImageComponent = ({ imgUrl, personName, Type, size }) => {
     e.target.src = "bg-placeholder.png";
   };
   return (
-    <div className="relative md:hover:shadow-image md:border-0 border border-gray-700">
+    <Link
+      href={LinkedInUrl}
+      target="_blank"
+      className="relative md:hover:shadow-image md:border-0 border border-gray-700"
+    >
       <div className="aspect-square">
         <img src="/stars.png" alt="" className="absolute inset-0 -z-10" />
         <img
@@ -45,7 +51,7 @@ const ImageComponent = ({ imgUrl, personName, Type, size }) => {
           {Type}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

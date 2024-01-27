@@ -28,59 +28,54 @@ const Team = () => {
 
   const coreTeam = [
     {
-      imgUrl: "Shashank.png",
+      imgUrl: "shashank.png",
       personName: "Shashank Yadav",
-      Type: "Design Team",
+      Type: "Core Team",
     },
     {
-      imgUrl: "Shruti pandey.png",
+      imgUrl: "shrutipandey.png",
       personName: "Shruti Pandey",
-      Type: "Web Team",
+      Type: "Core Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "aditi.png",
       personName: "Aditi Sharma",
-      Type: "Marketing Team",
+      Type: "Core Team",
     },
     {
       imgUrl: "Harsh Dewangan.png",
       personName: "Harsh Dewangan",
-      Type: "Design Team",
+      Type: "Core Team",
     },
     {
       imgUrl: "Rishabh Singh.png",
       personName: "Rishabh Singh",
-      Type: "Marketing Team",
+      Type: "Core Team",
     },
     {
-      imgUrl: "Shreya badgaiyan.png",
+      imgUrl: "shreya.png",
       personName: "Shreya Badgaiyan",
-      Type: "Marketing Team",
+      Type: "Core Team",
     },
     {
       imgUrl: "Prapti Sanghi.png",
       personName: "Prapti Sanghi",
-      Type: "Design Team",
+      Type: "Core Team",
     },
     {
       imgUrl: "Tanu Shree.png",
       personName: "Tanu Shree",
-      Type: "Design Team",
+      Type: "Core Team",
     },
     {
       imgUrl: "Priyansh Gupta.png",
       personName: "Priyansh Gupta",
-      Type: "Design Team",
+      Type: "Core Team",
     },
     {
-      imgUrl: "",
+      imgUrl: "ansh.png",
       personName: "Ansh Joseph",
-      Type: "Design Team",
-    },
-    {
-      imgUrl: "",
-      personName: "Priyansh Gupta",
-      Type: "Design Team",
+      Type: "Core Team",
     },
   ];
 
@@ -93,6 +88,11 @@ const Team = () => {
     {
       imgUrl: "Anandita.png",
       personName: "Anandita Singh",
+      Type: "Volunteer",
+    },
+    {
+      imgUrl: "Apoorva Sinha.png",
+      personName: "Apoorva Sinha",
       Type: "Volunteer",
     },
     {
@@ -115,33 +115,25 @@ const Team = () => {
       personName: "Tanisha Rathore",
       Type: "Volunteer",
     },
-    {
-      imgUrl: "Apoorva Sinha.png",
-      personName: "Apoorva Sinha",
-      Type: "Volunteer",
-    },
   ];
 
   const advisors = [
     {
       personName: "Chaitali Choudhary",
-      imgUrl:
-        "https://res.cloudinary.com/dlu9czr7j/image/upload/v1694106528/opinhacks/chaitali_bba1ov.svg",
+      imgUrl: "chaitali.png",
       LinkedlnUrl: "https://www.linkedin.com/in/chaitali-choudhary-8402b925/",
       Type: "Advisor",
     },
   ];
 
   return (
-    <div className="relative text-white flex flex-col items-center min-h-screen md:pt-36 pt-24">
-      <h1 className="text-4xl text-center px-8  font-semibold md:text-6xl ">
-        MEET OUR TEAM
-      </h1>
-      <div className="mt-12">
+    <div className="relative text-white flex flex-col items-center min-h-screen md:pt-28 pt-24">
+      {/* ORGANIZERS */}
+      <div className="p-0">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Organizers
         </h1>
-        <div className="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-24 gap-4 mt-10">
+        <div className="grid md:grid-cols-4 grid-cols-2 justify-center md:gap-20 gap-4 md:mt-10 mt-4">
           {organizer.map((item, index) => (
             <ImageComponent
               key={index}
@@ -153,11 +145,12 @@ const Team = () => {
           ))}
         </div>
       </div>
-      <div className="mt-12">
+      {/* ADVISOR */}
+      <div className="md:mt-20 mt-12">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Advisors
         </h1>
-        <div className="grid justify-center md:gap-24 gap-4 mt-10">
+        <div className="grid justify-center md:gap-24 gap-4 md:mt-10 mt-4">
           {advisors.map((item, index) => (
             <ImageComponent
               key={index}
@@ -169,11 +162,12 @@ const Team = () => {
           ))}
         </div>
       </div>
+      {/* CORE TEAM */}
       <div className="md:mt-24 mt-12 md:w-[95%]">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Core Team
         </h1>
-        <div className="flex flex-wrap justify-center md:gap-20 gap-4 mt-10">
+        <div className="flex flex-wrap justify-center md:gap-16 gap-4 md:mt-10 mt-4">
           {coreTeam.map((item, index) => (
             <ImageComponent
               key={index}
@@ -184,11 +178,12 @@ const Team = () => {
           ))}
         </div>
       </div>
+      {/* VOLUNTEER */}
       <div className="mt-24 mt-12 md:w-[90%]">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Volunteers
         </h1>
-        <div className="flex flex-wrap justify-center md:gap-20 gap-4 mt-10">
+        <div className="flex flex-wrap justify-center md:gap-20 gap-4 md:mt-10 mt-4 md:w-5/6 mx-auto">
           {volunteers.map((item, index) => (
             <ImageComponent
               key={index}
@@ -204,7 +199,7 @@ const Team = () => {
         height={700}
         width={500}
         alt=""
-        className="-z-30 absolute right-0 bottom-0 "
+        className="-z-30 absolute right-0 top-1/3 "
       />
     </div>
   );

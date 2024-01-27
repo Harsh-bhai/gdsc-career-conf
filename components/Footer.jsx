@@ -6,9 +6,10 @@ import Image from "next/image";
 
 const footerLinks = [
   { title: "Home", link: "/#hero" },
+  { title: "Register", link: "/register" },
   { title: "Sponsors", link: "/#sponsors" },
   { title: "Collaborate", link: "/#collab" },
-  { title: "Register", link: "/register" },
+  { title: "Team", link: "/team" },
 ];
 
 const Footer = () => {

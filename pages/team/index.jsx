@@ -73,6 +73,16 @@ const Team = () => {
       Type: "Core Team",
     },
     {
+      imgUrl: "nalini.png",
+      personName: "Nalini Ajwani",
+      Type: "Core Team",
+    },
+    {
+      imgUrl: "kavya.png",
+      personName: "Kavya Swarnkar",
+      Type: "Core Team",
+    },
+    {
       imgUrl: "ansh.png",
       personName: "Ansh Joseph",
       Type: "Core Team",
@@ -86,8 +96,8 @@ const Team = () => {
       Type: "Volunteer",
     },
     {
-      imgUrl: "Anandita.png",
-      personName: "Anandita Singh",
+      imgUrl: "kritika.png",
+      personName: "G Kirtika",
       Type: "Volunteer",
     },
     {
@@ -103,6 +113,11 @@ const Team = () => {
     {
       imgUrl: "Rahul Dewangan.png",
       personName: "Rahul Dewangan",
+      Type: "Volunteer",
+    },
+    {
+      imgUrl: "Anandita.png",
+      personName: "Anandita Singh",
       Type: "Volunteer",
     },
     {
@@ -129,7 +144,7 @@ const Team = () => {
   return (
     <div className="relative text-white flex flex-col items-center min-h-screen md:pt-28 pt-24">
       {/* ORGANIZERS */}
-      <div className="p-0">
+      <div className="md:px-12">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Organizers
         </h1>
@@ -146,7 +161,7 @@ const Team = () => {
         </div>
       </div>
       {/* ADVISOR */}
-      <div className="md:mt-20 mt-12">
+      <div className="md:mt-20 mt-12 md:px-12">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Advisors
         </h1>
@@ -163,7 +178,7 @@ const Team = () => {
         </div>
       </div>
       {/* CORE TEAM */}
-      <div className="md:mt-24 mt-12 md:w-[95%]">
+      <div className="md:mt-24 mt-12 md:w-[95%] md:px-12">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Core Team
         </h1>
@@ -179,7 +194,7 @@ const Team = () => {
         </div>
       </div>
       {/* VOLUNTEER */}
-      <div className="mt-24 mt-12 md:w-[90%]">
+      <div className="mt-24 mt-12 md:w-[95%] md:px-12">
         <h1 className=" text-primary text-3xl md:text-5xl text-center font-semibold md:font-extrabold">
           Volunteers
         </h1>

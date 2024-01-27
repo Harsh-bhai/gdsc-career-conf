@@ -4,10 +4,10 @@
 const ImageComponent = ({ imgUrl, personName, Type, size }) => {
   const imageSize =
     size === "large"
-      ? "md:w-[20rem] w-[10rem] md:h-[20rem] h-[10rem]"
-      : "md:w-[16rem] w-[10rem] md:h-[16rem] w-[10rem]";
+      ? "md:w-[16vw] w-[10rem] md:h-[16vw] h-[10rem]"
+      : "md:w-[14vw] w-[10rem] md:h-[14vw] w-[10rem]";
   const handleError = (e) => {
-    e.target.src = "https://via.placeholder.com/150x150/000000/000000.png";
+    e.target.src = "bg-placeholder.png";
   };
   return (
     <div className="relative md:hover:shadow-image md:border-0 border border-gray-700">
@@ -17,7 +17,7 @@ const ImageComponent = ({ imgUrl, personName, Type, size }) => {
           src={imgUrl}
           onError={handleError}
           alt={personName}
-          className={`${imageSize} object-cover rounded-md `}
+          className={`${imageSize} object-cover rounded-md aspect-square `}
         />
       </div>
 

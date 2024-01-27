@@ -48,7 +48,7 @@ const Sponsors = () => {
   return (
     <div
       id="sponsors"
-      className="w-screen md:mt-80
+      className="w-screen md:mt-56
        md:mb-0 my-28 px-4 md:w-5/6 mx-auto min-h-screen flex flex-col justify-center md:gap-20 gap-8"
     >
       <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0  text-center ">
@@ -87,7 +87,14 @@ const Sponsors = () => {
               id={name.toLowerCase()}
               key={index}
             >
-              <Image src={img} width={1600} height={900} className="w-90" alt={name} srcset="" />
+              <Image
+                src={img}
+                width={1600}
+                height={900}
+                className="w-90"
+                alt={name}
+                srcset=""
+              />
             </Link>
           ))}
         </div>

@@ -33,7 +33,7 @@ const About = () => {
   useEffect(() => {
     if (aboutTransitioned && aboutInfoInView) {
       aboutInfoControls.start({
-        y: "110%",
+        y: "0%",
         opacity: 1,
         transition: { type: "spring", duration: 2, bounce: 0.3 },
       });
@@ -44,7 +44,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className="w-screen relative md:h-[95vh] grid md:grid-cols-2 gap-28 items-start justify-center px-4 md:w-5/6 mx-auto md:my-12 my-8 pt-2 md:mt-64 z-20"
+        className="w-screen relative grid md:grid-cols-2 md:gap-28 gap-16 items-start justify-center px-4 md:w-5/6 mx-auto md:mt-12 md:mb-72 mt-8 mb-20 pt-2 md:mt-64 z-20"
       >
         <motion.div
           ref={aboutRef}
@@ -74,13 +74,19 @@ const About = () => {
         </motion.div>
         <motion.div
           ref={aboutInfoRef}
-          initial={{ y: "200%", opacity: 0 }}
+          initial={{ y: "100%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info flex items-start md:-mb-[2vw]"
+          className="about-info flex items-center justify-center md:-mt-[2vw]"
         >
           {/* <AboutInfo /> */}
-          <Image src={"/AboutAsset.png"} width={500} height={500} alt="" className="-translate-y-80 md:translate-y-0"/>
+          <Image
+            src={"/AboutAsset.png"}
+            width={500}
+            height={500}
+            alt=""
+            // className="-translate-y-80 md:translate-y-0"
+          />
         </motion.div>
       </section>
 

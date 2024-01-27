@@ -31,7 +31,7 @@ const Sponsors = () => {
     {
       name: "Coding Ninja",
       img: "/CodingNinja.png",
-      href: "https://www.codingninjas.com/",
+      href: "https://cnwebsite22.vercel.app/",
     },
     {
       name: "GDSC BIT Raipur",

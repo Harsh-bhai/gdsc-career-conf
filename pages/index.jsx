@@ -4,6 +4,7 @@ import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
 import Sponsors from "@/components/Sponsors";
+import Speakers from "@/components/Speakers";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="relative">
         <About />
         <Collaborate />
+        <Speakers/>
         <Sponsors />
         <SpeakerRegister />
         <FaqContainer />

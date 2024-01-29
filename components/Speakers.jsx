@@ -12,7 +12,7 @@ const Speakers = () => {
       topic: "Product Management",
     },
     {
-      name: "Dewanch Thakur",
+      name: "Dewansh Thakur",
       img: "/dewansh.png",
       title: "Full Stack Developer",
       LinkedInUrl: "https://www.linkedin.com/in/dewanshthakur",

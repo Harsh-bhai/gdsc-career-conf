@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,68 +6,73 @@ const Speakers = () => {
   const speakers = [
     {
       name: "Hansraj Sharma",
-      img: "/tejas bkr 1.png",
+      img: "/hansraj.png",
       title: "Product Management Associate",
       LinkedInUrl: "https://www.linkedin.com/in/hansajsharma",
-      topic: "Product Mangement",
+      topic: "Product Management",
     },
     {
       name: "Dewanch Thakur",
-      img: "/tejas bkr 1.png",
+      img: "/dewansh.png",
       title: "Full Stack Developer",
       LinkedInUrl: "https://www.linkedin.com/in/dewanshthakur",
       topic: "Open Source & Remote",
     },
     {
       name: "Nikhil Aparajit",
-      img: "/tejas bkr 1.png",
+      img: "/nikhil.png",
       title: "Community Management Specialist",
       LinkedInUrl: "https://www.linkedin.com/in/nikhil-aparajit",
       topic: "WEB3, Community Manager",
     },
     {
       name: "Tejas Agarwal",
-      img: "/tejas bkr 1.png",
+      img: "/tejas.png",
       title: "Product Designer",
       LinkedInUrl: "https://www.linkedin.com/in/thetejasagrawal",
       topic: "UI/UX Design",
     },
     {
       name: "Sanskar Tayal",
-      img: "/tejas bkr 1.png",
+      img: "/sanskar.png",
       title: "Founder GrainBazaar, Game Developer",
       LinkedInUrl: "https://www.linkedin.com/in/sanskar-tayal-43587b176",
       topic: "Game Development",
     },
+    {
+      name: "Sanskriti Harmukh",
+      img: "/sanskriti.png",
+      title: "GtiHub Campus Expert | Developer Advocate",
+      LinkedInUrl: "https://www.linkedin.com/in/sanskriti-harmukh/",
+      topic: "Git Checkout Opportunities",
+    },
   ];
   return (
-    <div
-      className="w-screen md:mt-56 hidden
-    md:mb-0 my-28 px-4  mx-auto min-h-screen md:flex flex-col justify-center md:gap-20 gap-8"
-    >
-      <div className="community-partners flex flex-col justify-center">
-        <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0  text-center ">
-          Meet our incredible Sponsors
+    <div className="w-5/6  md:flex flex-col justify-center md:gap-28 gap-8 md:mt-56 md:mb-0 my-28 px-4 mx-auto ">
+      <div className="flex flex-col justify-center">
+        <h2 className="font-secondary md:text-[3.5vw] text-4xl md:p-0 text-center ">
+          Meet our Speakers
         </h2>
-        <div className="s-row grid grid-cols-1 gap-x-4 gap-y-16 md:grid-cols-3 w-4/5 mx-auto md:my-[4rem] my-[2.5rem]">
+        <div className="flex flex-wrap md:gap-y-36  gap-12  items-center justify-center mx-auto md:mt-36 my-20">
           {speakers.map(({ name, img, title, LinkedInUrl, topic, index }) => (
             <div
               key={index}
-              className=" border-l-4 border-t-4 border-[6px] rounded-2xl border-indigo-500 text-sm flex items-center space-x-10"
+              className="md:w-[23vw] w-full h-44 md:border-4 border-2 rounded-[40px] border-primary text-sm grid grid-cols-2"
             >
-              <Image
-                src={img}
-                width={1600}
-                height={900}
-                className="w-1/2"
-                alt={name}
-                srcset=""
-              />
-              <div className="flex flex-col text-left ">
-                <span className="text-sm">{name}</span>
-                <span className="text-red-500 text-xs">
-                  {title}
-                </span>
+              <div className="relative">
+                <Image
+                  src={img}
+                  height={300}
+                  width={200}
+                  alt={name}
+                  className="absolute bottom-2 md:lefft-0 left-2 rounded-l-b-[60px]"
+                />
+              </div>
+
+              <div className="h-44 flex flex-col justify-center p-4">
+                <span className="md:text-lg text-base">{name}</span>
+                <span className="text-yellow-500 text-xs block">{title}</span>
+                {/* Add additional description or content here */}
               </div>
             </div>
           ))}
@@ -77,22 +83,3 @@ const Speakers = () => {
 };
 
 export default Speakers;
-
-// {speakers.map(({ name, img, title, LinkedInUrl, topic,index }) => (
-//   <Link
-//     target="blank"
-//     className="s-col border-2 border-text flex items-center justify-center md:py-auto py-8 px-12 z-10"
-//     href={LinkedInUrl}
-//     id={name.toLowerCase()}
-//     key={index}
-//   >
-// <Image
-//   src={img}
-//   width={1600}
-//   height={900}
-//   className="w-90"
-//   alt={name}
-//   srcset=""
-// />
-//   </Link>
-// ))}

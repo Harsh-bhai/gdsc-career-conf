@@ -55,7 +55,8 @@ const Speakers = () => {
         </h2>
         <div className="flex flex-wrap md:gap-y-36  gap-12  items-center justify-center mx-auto md:mt-36 my-20">
           {speakers.map(({ name, img, title, LinkedInUrl, topic, index }) => (
-            <div
+            <Link
+              href={LinkedInUrl}
               key={index}
               className="md:w-[23vw] w-full h-44 md:border-4 border-2 rounded-[40px] border-primary text-sm grid grid-cols-2"
             >
@@ -65,7 +66,7 @@ const Speakers = () => {
                   height={300}
                   width={200}
                   alt={name}
-                  className="absolute bottom-2 md:lefft-0 left-2 rounded-l-b-[60px]"
+                  className="absolute bottom-2 left-2 rounded-l-b-[60px] "
                 />
               </div>
 
@@ -74,7 +75,7 @@ const Speakers = () => {
                 <span className="text-yellow-500 text-xs block">{title}</span>
                 {/* Add additional description or content here */}
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

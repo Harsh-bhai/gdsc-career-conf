@@ -5,6 +5,7 @@ import About from "@/components/About";
 import SpeakerRegister from "@/components/SpeakerRegister";
 import Sponsors from "@/components/Sponsors";
 import Speakers from "@/components/Speakers";
+import Timeline from "@/components/timeline";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Collaborate />
         <Speakers/>
+        <Timeline/>
         <Sponsors />
         <SpeakerRegister />
         <FaqContainer />

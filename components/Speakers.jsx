@@ -5,7 +5,7 @@ import Image from "next/image";
 const Speakers = () => {
   const speakers = [
     {
-      name: "Hansraj Sharma",
+      name: "Hansaj Sharma",
       img: "/hansraj.png",
       title: "Product Management Associate",
       LinkedInUrl: "https://www.linkedin.com/in/hansajsharma",

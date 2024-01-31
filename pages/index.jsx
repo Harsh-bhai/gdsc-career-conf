@@ -2,7 +2,7 @@ import FaqContainer from "@/components/FaqContainer";
 import Hero from "@/components/Hero";
 import Collaborate from "@/components/Collaborate";
 import About from "@/components/About";
-import SpeakerRegister from "@/components/SpeakerRegister";
+// import SpeakerRegister from "@/components/SpeakerRegister";
 import Sponsors from "@/components/Sponsors";
 import Speakers from "@/components/Speakers";
 import Timeline from "@/components/timeline";
@@ -19,7 +19,7 @@ export default function Home() {
         <Speakers/>
         <Timeline/>
         <Sponsors />
-        <SpeakerRegister />
+        {/* <SpeakerRegister /> */}
         <FaqContainer />
       </main>
     </div>

@@ -7,8 +7,6 @@ import Sponsors from "@/components/Sponsors";
 import Speakers from "@/components/Speakers";
 import Timeline from "@/components/timeline";
 
-
-
 export default function Home() {
   return (
     <div className="text-white relative overflow-hidden">
@@ -16,8 +14,8 @@ export default function Home() {
       <main className="relative">
         <About />
         <Collaborate />
-        <Speakers/>
-        <Timeline/>
+        <Timeline />
+        <Speakers />
         <Sponsors />
         {/* <SpeakerRegister /> */}
         <FaqContainer />

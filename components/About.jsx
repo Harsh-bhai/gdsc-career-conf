@@ -77,13 +77,13 @@ const About = () => {
           initial={{ y: "100%", opacity: 0 }}
           animate={aboutInfoControls}
           transition={{ type: "spring", duration: 4, bounce: 0.3 }}
-          className="about-info flex items-center justify-center md:-mt-[2vw]"
+          className="about-info flex items-center justify-center md:-mt-[5vw]"
         >
           {/* <AboutInfo /> */}
           <Image
             src={"/AboutAsset.png"}
-            width={500}
-            height={500}
+            width={700}
+            height={700}
             alt=""
             // className="-translate-y-80 md:translate-y-0"
           />

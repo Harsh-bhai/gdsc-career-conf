@@ -13,9 +13,8 @@ export default function Home() {
       <Hero />
       <main className="relative">
         <About />
-        <Collaborate />
-        <Timeline />
         <Speakers />
+        <Timeline />
         <Sponsors />
         {/* <SpeakerRegister /> */}
         <FaqContainer />

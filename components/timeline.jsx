@@ -43,7 +43,7 @@ function Timeline() {
   ];
 
   return (
-    <div className="h-auto md:my-36 my-16" id="timeline">
+    <div className="h-auto md:my-36" id="timeline">
       <h1 className="font-secondary text-white text-center px-8 md:text-[3.5vw] text-4xl pt-14 font-karrera ">
         Timeline
       </h1>

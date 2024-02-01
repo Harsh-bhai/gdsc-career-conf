@@ -14,11 +14,11 @@ function Timeline() {
     },
     {
       time: "11:35 AM",
-      title: "Speaker 2: Hansaj Sharma",
+      title: "Sponsor Section: Sanskriti Harmukh",
     },
     {
       time: "12:10 PM",
-      title: "Sponsor Section: Sanskriti Harmukh",
+      title: "Speaker 2: Hansaj Sharma",
     },
     {
       time: "12:40 PM",

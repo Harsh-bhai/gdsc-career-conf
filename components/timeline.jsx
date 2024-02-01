@@ -18,7 +18,7 @@ function Timeline() {
     },
     {
       time: "12:10 PM",
-      title: "Speaker 2: Hansaj Sharma",
+      title: "Speaker 2: Sanskar Tayal",
     },
     {
       time: "12:40 PM",
@@ -30,7 +30,7 @@ function Timeline() {
     },
     {
       time: "02:45 PM",
-      title: "Speaker 4: Sanskar Tayal",
+      title: "Speaker 4: Hansaj Sharma",
     },
     {
       time: "03:30 PM",
